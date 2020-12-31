@@ -1,0 +1,143 @@
+    1  cmd
+    2  pwd
+    3  ls
+    4  ls
+    5  ls
+    6  ls
+    7  cd Downloads/
+    8  ls\
+    9  ls
+   10  cd ..
+   11  ls
+   12  cd Downloads/
+   13  ls
+   14  cd ..
+   15  cd Downloads/
+   16  cd ..
+   17  cd .
+   18  cd .
+   19  cd .
+   20  cd .
+   21  cd .
+   22  cd /
+   23  ls
+   24  cd ~
+   25  pwd
+   26  touch a.txt
+   27  ls
+   28  cat a.txt 
+   29  ls
+   30  rm a.txt 
+   31  ls
+   32  mkdir test
+   33  ls
+   34  cd test/
+   35  ls
+   36  cd ..
+   37  ls
+   38  rm -r test/
+   39  ls
+   40  git --version
+   41  git --version
+   42  git --version
+   43  code 
+   44  exit
+   45  code 
+   46  code --version
+   47  exit
+   48  code --version
+   49  pwd
+   50  cd ~
+   51  pwd
+   52  mkdir git
+   53  ls
+   54  cd git/
+   55  ls
+   56  git init
+   57  ls
+   58  ls -a
+   59  cd .git/
+   60  ls
+   61  cd ..
+   62  ls -a
+   63  ls
+   64  rm -r .git/
+   65  git init
+   66  ls -a
+   67  rm -r .git/
+   68  ls -a
+   69  git init
+   70  ls -a
+   71  rm -r .git/
+   72  git init
+   73  ls -a
+   74  git status
+   75  touch a.txt
+   76  ls
+   77  git status
+   78  git add a.txt 
+   79  git status
+   80  git commit
+   81  vi a.txt 
+   82  git config --global user.email "you@example.com"
+   83  git config --global user.email "you@example.com"
+   84  git config --global user.email "iqaisvpqnsxvrytbgw@kiabws.com
+"
+   85  git config --global user.email
+   86  git config --global user.email
+   87  git config --global user.email 'iqaisvpqnsxvrytbgw@kiabws.com
+'
+   88  git config --global user.email '내이메일@naver.com'
+   89  git config --global user.email
+   90  git config --global user.email 'iqaisvpqnsxvrytbgw@kiabws.com'
+   91  git config --global user.email
+   92  git config --global user.name
+   93  git config --global user.name 'John Kang'
+   94  git config --global user.name
+   95  git commit -m 'first commit'
+   96  git log
+   97  ls
+   98  code .
+   99  git status
+  100  git diff a.txt
+  101  git status
+  102  git add a.txt 
+  103  git status
+  104  git commit -m 'Add my name'
+  105  git log
+  106  ls
+  107  git log --oneline
+  108  git checkout  
+  109  campusseven05@DESKTOP-L5TP61T MINGW64 ~
+  110  $ mkdir git
+  111  campusseven05@DESKTOP-L5TP61T MINGW64 ~
+  112  $ ls
+  113  '3D Objects'/
+  114   AppData/
+  115  'Application Data'@
+  116   Contacts/
+  117   Cookies@
+  118   Desktop/
+  119   Documents/
+  120   Downloads/
+  121   Favorites/
+  122   Links/
+  123  'Local Settings'@
+  124   MicrosoftEdgeBackups/
+  125   Music/
+  126  'My Documents'@
+  127  campusseven05@DESKTOP-L5TP61T MINGW64 ~/
+  128  campusseven05@DESKTOP-L5TP61T MINGW64 ~/
+  129  $ ls
+  130  a.txt
+  131  campusseven05@DESKTOP-L5TP61T MINGW64 ~/
+  132  $ git log --oneline
+  133  5d36096 (HEAD -> master) Add my name
+  134  3b76637 first commit
+  135  campusseven05@DESKTOP-L5TP61T MINGW64 ~/
+  136  $ git checkout
+  137  git log --oneline
+  138  git checkout 3b76637
+  139  git log
+  140  git checkout master
+  141  history > history.txt
