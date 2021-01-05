@@ -1,0 +1,40 @@
+Python 3.8.7 (tags/v3.8.7:6503f05, Dec 21 2020, 17:59:51) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> v1 =100
+>>> v2 = 50
+>>> r1 = v1 + v2
+>>> r2 = v1-v2
+>>> r3 = v1*v2
+>>> r4 = v1/v2
+>>> print(r1,r2,r3,r4)
+150 50 5000 2.0
+>>> r1
+150
+>>> r2
+50
+>>> r3
+5000
+>>> r4
+2.0
+>>> name1 = "조"
+>>> name2 = "용"
+>>> name3 = "상"
+>>> print(name1,name2,name3)
+조 용 상
+>>> print(name1,name2,name3,sep=@)
+SyntaxError: invalid syntax
+>>> print(name1,name2,name3,sep=@)
+SyntaxError: invalid syntax
+>>> print(name1,name2,name3,sep="@")
+조@용@상
+>>> print(name1,name2,name3,sep="--")
+조--용--상
+>>> r5 = (10 + 25 + 34)/3
+>>> r5
+23.0
+>>> r6 = (10+25+34)
+>>> r6
+69
+>>> print("합은",r6,"이고 평균은", r5,"입니다.")
+합은 69 이고 평균은 23.0 입니다.
+>>> 
