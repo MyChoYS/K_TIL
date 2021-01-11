@@ -4,8 +4,8 @@ print(dic.values())
 print(dic.items())
 
 keylist = dic.keys()
-for key in keylist:
-    print(key)
+for i in keylist:
+    print(i)
 
 valuelist = dic.values()
 for value in valuelist:
@@ -16,5 +16,8 @@ for item in itemlist:
     print(item)
 
 itemlist = dic.items()
+for value,key in itemlist:
+    print(value, key, sep="-")
+
 for key,value in itemlist:
     print(key, value, sep="-")

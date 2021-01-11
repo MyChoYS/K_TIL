@@ -6,6 +6,8 @@ if '사자' in mammal:
 else:
     print("사자는 포유류가 아니다.")
 
+
+#집합 간의 비교는 대소비교가 아니라 포함관계를 체크,,p.238,파이썬 정복
 print(primate <= mammal)
 print(primate < mammal)
 print(primate <= primate)

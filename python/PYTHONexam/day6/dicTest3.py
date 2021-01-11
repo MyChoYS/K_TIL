@@ -24,7 +24,7 @@ item = x.items()
 # for key, value in item:
 #     if value == 20:
 #         del x[key]
-
+print(list(item))
 for key, value in list(item):
     if value == 20:
         del x[key]
