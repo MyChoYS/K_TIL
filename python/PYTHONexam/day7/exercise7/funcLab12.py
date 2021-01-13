@@ -7,7 +7,9 @@ def myprint(*p,deco="**",sep=","):
         print(deco,end="")
         print(*p,sep=sep,end="")
         print(deco,end="")
+        return ''
 
+print(myprint(10,20,30))
 
 ##답
 def myprint1(*a, **args):
