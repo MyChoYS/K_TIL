@@ -2,35 +2,172 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbccc946-fb5f-4508-af6a-2b60618b17a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/funcTest27.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHONexam/day7/funcTest27_star.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/stmoduleTest1.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/stmoduleTest2.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/stmoduleTest3.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/stmoduleTest4.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/stmoduleTest5.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/stmoduleTest6.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/stmoduleTest7.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/stmoduleTest8.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest8.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/stmoduleTest9.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest9.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/assertTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/assertTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exceptionTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exceptionTest10.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exceptionTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exceptionTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exceptionTest4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exceptionTest5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exceptionTest6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exceptionTest7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exceptionTest8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exceptionTest9.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1n2cmHaVmcLEvLcus6NNn1BkMwc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PYTHONexam/day10/exercise" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\git_hub\K_TIL\python\PYTHONexam\day10\exercise" />
+      <recent name="C:\Users\ChoYongSang\git_hub\K_TIL\python\PYTHONexam\day10" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.fileioLab3">
+    <configuration name="fileioLab2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PYTHONexam/day10/exercise" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PYTHONexam/day10/exercise/fileioLab2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fileioLab3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PYTHONexam/day10/exercise" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PYTHONexam/day10/exercise/fileioLab3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="stLab1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PYTHONexam/day10/exercise" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PYTHONexam/day10/exercise/stLab1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="stmoduleTest2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PYTHONexam/day9" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="stmoduleTest4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PYTHONexam/day9" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.fileioLab3" />
+        <item itemvalue="Python.stLab1" />
+        <item itemvalue="Python.stmoduleTest4" />
+        <item itemvalue="Python.stmoduleTest2" />
+        <item itemvalue="Python.fileioLab2" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

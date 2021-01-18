@@ -4,6 +4,8 @@ try:
     print("네트워크 통신 수행")
 except ZeroDivisionError as z :
     print(z)
+    import sys
+    sys.exit(-1)
 finally:
     print("접속 해제")
 print("작업 완료")
