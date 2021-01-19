@@ -7,8 +7,8 @@ while True:
         print(calendar.month(year, mon))
         break
 
-
-    except ValueError:
-        print(ValueError,"숫자를 입력하시오.")
+    except ValueError as v:
+        print(str(v),"숫자를 입력하시오.")
     except IndexError:
         print("제대로 된 숫자를 입력하시오.")
+
