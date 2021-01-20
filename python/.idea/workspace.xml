@@ -3,10 +3,352 @@
   <component name="ChangeListManager">
     <list default="true" id="cbccc946-fb5f-4508-af6a-2b60618b17a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/fileioLab1.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHONexam/day10/exercise/fileioLab1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/fileioLab2.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHONexam/day10/exercise/fileioLab2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/fileioLab3.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHONexam/day10/exercise/fileioLab3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/stLab1.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHONexam/day10/exercise/stLab1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/1월18일_1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/assertTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/assertTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exceptionTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exceptionTest10.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exceptionTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exceptionTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exceptionTest3_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exceptionTest4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exceptionTest5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exceptionTest5_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exceptionTest6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exceptionTest7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exceptionTest8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exceptionTest9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/answer/fileioLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/answer/fileioLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/answer/fileioLab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/answer/fileioLab3_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/answer/fileioLab3_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/answer/fileioLab3_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/answer/stLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/answer/stLab1_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/answer/stLab1_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/fileioLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/fileioLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/fileioLab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/sample.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/sample_2021_01_19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/sample_yyyy_mm_dd.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/stLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/today.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/exercise/yesterday.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/fileioTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/fileioTest1_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/fileioTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/fileioTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/fileioTest4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/fileioTest5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/fileioTest6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/fileioTest7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/live.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/live_ansi.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/sample.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day10/yesterday.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/1월19일_1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest10.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest10_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest11.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest11_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest2_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest6_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest6_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest6_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/classTest9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/exercise/classLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day11/exercise/classLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/1월5일실습_1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/1월5일실습_2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exam1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/1월5일.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/conditionLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/conditionLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/conditionLab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/conditionLab4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/conditionLab5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/conditionLab6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/conditionLab7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/conditionLan8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/정답/conditionLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/정답/conditionLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/정답/conditionLab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/정답/conditionLab4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/정답/conditionLab5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/정답/conditionLab6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/정답/conditionLab7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/exercise2_condition/정답/conditionLab8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/forTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/forTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/forTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/forTest4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/forTest5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/forTest6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/forTest7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/forTest8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/forTest9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/ifTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/ifTest10.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/ifTest11.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/ifTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/ifTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/ifTest4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/ifTest5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/ifTest6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/ifTest7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/ifTest8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/ifTest9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/inputname.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/intinput.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/intinput1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/opertest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day2/opertest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/1월6일실습_1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/1월6일실습_2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/ASCII코드테이블.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/case1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/case2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/case3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/codeprintapp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/answer/forLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/answer/forLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/answer/forLab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/answer/forLab4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/answer/forLab5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/answer/forLab6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/answer/whileLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/answer/whileLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/answer/whileLab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/answer/whileLab4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/answer/whileLab5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/answer/whileLab6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/forLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/forLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/forLab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/forLab4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/forLab5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/forLab6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/whileLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/whileLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/whileLab6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/whlieLab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/whlieLab4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/exercise3_for_while/whlieLab5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/forTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/forTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/forTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/forTest4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/forTest5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/forTest5_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/forTest6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/forTest6_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/forTest7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/forTest8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/forTest9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/python -3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/whileTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/whileTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/whileTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/whileTest3_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/whileTest4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/whileTest5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/whileTest5_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/whileTest6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day3/whileTest7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/1월7일실습_1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/1월7일실습_2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/exercise4_func/answer/fucnLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/exercise4_func/answer/fucnLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/exercise4_func/answer/fucnLab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/exercise4_func/answer/fucnLab4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/exercise4_func/answer/fucnLab5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/exercise4_func/answer/fucnLab6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/exercise4_func/answer/fucnLab7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/exercise4_func/funcLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/exercise4_func/funcLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/exercise4_func/funcLab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/exercise4_func/funcLab4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/exercise4_func/funcLab5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/exercise4_func/funcLab6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/exercise4_func/funcLab7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/funcTest0.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/funcTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/funcTest10.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/funcTest11.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/funcTest12.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/funcTest13.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/funcTest14.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/funcTest15.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/funcTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/funcTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/funcTest4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/funcTest5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/funcTest6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/funcTest7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/funcTest8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/funcTest9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day4/학습내용.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/1월8일실습_1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/1월8일실습_2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/exercise5_func_list/answer/funcLab10.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/exercise5_func_list/answer/funcLab8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/exercise5_func_list/answer/funcLab9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/exercise5_func_list/answer/listLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/exercise5_func_list/answer/listLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/exercise5_func_list/answer/listLab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/exercise5_func_list/answer/listLab4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/exercise5_func_list/funcLab10.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/exercise5_func_list/funcLab8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/exercise5_func_list/funcLab9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/exercise5_func_list/listLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/exercise5_func_list/listLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/exercise5_func_list/listLab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/exercise5_func_list/listLab4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/funcTest13.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/funcTest14.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/funcTest15.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/funcTest16.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/funcTest17.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/funcTest18.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/funcTest19.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/funcTest20.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/listTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/listTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/listTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/listTest4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/listTest5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/python3_cheat_sheet.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/tupleTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/tupleTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day5/tupleTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/1월11일실습_1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/dicTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/dicTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/dicTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/dicTest4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/dicTest5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/dicTest6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/dicTest7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/answer/dicLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/answer/dicLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/answer/listLab5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/answer/listLab5_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/answer/listLab6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/answer/listLab6_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/answer/listLab7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/answer/listLab8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/answer/setLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/answer/setLab1_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/answer/setLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/dicLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/dicLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/listLab5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/listLab6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/listLab7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/listLab8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/setLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/exercise6_dic_list_set/setLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/funcTest21.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/funcTest22.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/funcTest23.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/funcTest24.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/funcTest25.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/funcTest26.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/funcTest27.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/sequenceTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/sequenceTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/sequenceTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/setTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day6/setTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/1월12일실습_1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/1월12일실습_2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/def_argument_summary.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/dict_comprehension1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/dict_comprehension2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/dict_comprehension3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/exercise7/answer/funcLab11.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/exercise7/answer/funcLab12.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/exercise7/funcLab11.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/exercise7/funcLab11_again.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/exercise7/funcLab12.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/exercise7/funcLab12_again.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/exercise7/practice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/formatTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/formatTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/formatTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/formatTest4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/formatTest5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/funcTest26.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/funcTest27_star.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/list_comprehension1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/list_comprehension2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/list_comprehension3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/list_comprehension4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/objectTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/objectTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/objectTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/packunpackTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/set_comprehension1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/sortTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/strTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/strTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/strTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/strTest4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/strTest5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/strTest6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day7/tupleTest4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/1월13일실습_1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/collectionmgrTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/collectionmgrTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/collectionmgrTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/collectionmgrTest4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/copyTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/copyTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/copyTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/answer/compreLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/answer/compreLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/answer/compreLab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/answer/compreLab4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/answer/compreLab4_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/answer/compreLab4_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/answer/compreLab4_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/answer/packunpackLab.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/answer/strLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/answer/strLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/compreLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/compreLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/compreLab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/compreLab4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/packunpackLab.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/strLab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/exercise8/strLab2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/firstclassobjectTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/firstclassobjectTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/funcTest26.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/funcTest27.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/lambdaTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/lambdaTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day8/lambdaTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHONexam/day9/stmoduleTest9.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,17 +377,18 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PYTHONexam/day11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HTML_CSS/nginx-1.18.0/html/edu" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\git_hub\K_TIL\python\PYTHONexam\day12_util_module" />
       <recent name="C:\git_hub\K_TIL\python\PYTHONexam\day11" />
       <recent name="C:\git_hub\K_TIL\python\PYTHONexam\day10\exercise" />
       <recent name="C:\Users\ChoYongSang\git_hub\K_TIL\python\PYTHONexam\day10" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.classTest10">
-    <configuration name="classLab1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.importall">
+    <configuration name="A" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -53,11 +396,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PYTHONexam/day11/exercise" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PYTHONexam/day12" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PYTHONexam/day11/exercise/classLab1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PYTHONexam/day12/A.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -66,7 +409,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="classLab2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="builtinmodule1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,11 +417,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PYTHONexam/day11/exercise" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PYTHONexam/day12" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PYTHONexam/day11/exercise/classLab2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PYTHONexam/day12/builtinmodule1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -87,7 +430,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="classTest10" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="importall" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,11 +438,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PYTHONexam/day11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PYTHONexam/day12_util_module_package" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PYTHONexam/day11/classTest10.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PYTHONexam/day12_util_module_package/importall.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -108,7 +451,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="classTest2_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="syspath" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,11 +459,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PYTHONexam/day11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PYTHONexam/day12_util_module" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PYTHONexam/day11/classTest2_1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PYTHONexam/day12_util_module/syspath.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -129,7 +472,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="classTest3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="usepackage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -137,11 +480,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PYTHONexam/day11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PYTHONexam/day12_util_module" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PYTHONexam/day11/classTest3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PYTHONexam/day12_util_module/usepackage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,11 +495,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.classTest10" />
-        <item itemvalue="Python.classLab1" />
-        <item itemvalue="Python.classLab2" />
-        <item itemvalue="Python.classTest3" />
-        <item itemvalue="Python.classTest2_1" />
+        <item itemvalue="Python.importall" />
+        <item itemvalue="Python.usepackage" />
+        <item itemvalue="Python.syspath" />
+        <item itemvalue="Python.A" />
+        <item itemvalue="Python.builtinmodule1" />
       </list>
     </recent_temporary>
   </component>
@@ -170,5 +513,21 @@
       <updated>1610591783629</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PYTHONexam/day12/classTest12.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PYTHONexam/day12/classTest12.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

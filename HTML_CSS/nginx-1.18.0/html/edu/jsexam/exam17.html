@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>아규먼트로 함수 전달하기(고차함수)</h1>
+<hr>
+<script>
+function output(p) {
+	if(typeof p == 'function') {
+		p("ㅋㅋㅋ");
+	} else {
+		document.write("<h2>ㅋㅋㅋ : "+p+"</h2>");		
+	}	
+}
+output("둘리");
+output(function(param) { console.log(param);})
+function myAlert(param) {
+//var myAlert = function(param) {	
+	window.alert(param);
+}
+output(myAlert);
+</script>
+</body>
+</html>
+
+
+
+
+
+
