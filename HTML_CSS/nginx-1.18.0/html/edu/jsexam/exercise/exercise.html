@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise</title>
+</head>
+<body>
+<script>
+    var a1 = [10,5,7,21,4,8,18];
+    var sum = 0;
+    var max = a1[0]
+    var min = a1[0]
+    for (i in a1){
+        sum += a1[i]
+        if(max < a1[i])
+            max = a1[i];
+        if(min > a1[i])
+            min = a1[i];
+     }
+    document.write("<h1>모든 원소의 합 : "+sum+"  </h1>");
+    document.write("<ul><li>최대값 : "+max+" </li></ul>");
+    document.write("<ul><li>최소값 : "+min+" </li></ul>");
+</script>
+</body>
+</html>

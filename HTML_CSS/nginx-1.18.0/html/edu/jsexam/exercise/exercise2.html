@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise2</title>
+</head>
+<body>
+<script>
+    function sum(num) {
+       var a_sum = 0
+       if (arguments.length == 0)
+            return
+       else {
+            for (var i =0; i < num+1; i++) {
+                 a_sum += i
+            }
+            return a_sum
+       }
+    }
+
+    document.write("<h1> "+sum(10)+" </h1>")
+    var result;
+
+    var r_num = Math.floor(Math.random()*5);
+    if (r_num == 0) {
+        r_sum = sum()
+        document.write("<h3> 결과값이 없어요 !! </h3>")
+        }
+    else{
+         document.write("<h2>호출 결과값 : "+sum(r_num)+" </h2>")
+         }
+        //if ~ r_sum = sum() 여기까지만 하고, 그 밑에 새로 if절해서 r_sum의 undifined를 구별하는 if절해야했음.
+</script>
+</body>
+</html>
