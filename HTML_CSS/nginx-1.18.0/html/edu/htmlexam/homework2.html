@@ -1,27 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>HTML5 학습</title>
+<meta charset="UTF-8">
+<title>HTML5학습</title>
     <style>
+        *{
+		text-align : auto;
+		margin : auto;
+		width : 600pt;
 
 
+        }
+        header {
+        background-image : linear-gradient(45deg ,yellow,pink,pink);
+        text-align : center;
+        margin : auto;
+        }
+        header > h1 {
+        text-shadow : 4px 4px 2px white, 2px 2px 2px white;
+        text-align : center;
+        margin : auto;
+        }
+        article > h2 {
+            line-height : 35pt;
+
+        }
+        a {
+         text-decoration : none;
+         margin-right : 30px;
+        }
+        a:hover{
+        font-weight : bold;
+        }
+        article {
+        border-radius : 10px;
+        border : 2px dotted pink;
+        padding : 15pt;
+        }
 
     </style>
-</head>
 
+</head>
 <body>
 <header>
-    <h1>HTML5 학습</h1>
+    <h1>HTML5학습</h1>
     <nav>
         <a href="http://www.w3.org/">W3C</a>
         <a href="http://www.w3schools.com/">W3C Schools</a>
-        <a href="https://jquery.com/">jQuery.</a>
+        <a href="https://jquery.com/">jQuery</a>
     </nav>
 </header>
+<br>
 <section>
     <article>
-        <h2>나의 소개</h2>
+        <h2><span style="color:red">나의 소개</span></h2>
         <ul>
             <li>이름: 조용상</li>
             <li>별명: 조씨</li>
@@ -29,24 +61,26 @@
             <li>취미: 게임</li>
         </ul>
     </article>
+    <br>
     <article>
-        <h2>올해 재미있게 읽은 책</h2>
+        <h2 style="color : green">올해 재미있게 읽은 책</h2>
         <table border="1">
-            <tr><th>제목</th><th>장르</th></tr>
+            <tr bgcolor="red" ><th style="font-weight : bold">제목</th><th>장르</th></tr>
             <tr><td>사람은 무엇으로 사는가</td><td>단편집</td></tr>
             <tr><td>파이썬 정복</td><td>가르침</td></tr>
             <tr><td>다빈치 코드</td><td>추리</td></tr>
         </table>
     </article>
+    <br>
     <article>
-        <h2>자랑하고 싶은 우리동네의 아름다운 곳</h2>
-        <h5> 연수구의 가운데에 우뚝 서서 송도 앞바다를 내려다보고 있는 청량산(淸凉山)은 <br>
-            산세가 아름답고 좋다고 해서 붙은 이름이다.
+        <h2 style="color:violet">자랑하고 싶은 <span style="color:red">우리동네</span>의 아름다운 곳</h2>
+        <h5> 연수구의 가운데에 우뚝 서서 송도 앞바다를 내려다보고 있는 청량산(淸凉山)은 산세가 아름답고 좋다고 해서 붙은 이름이다.
             주변 초등학교 현장학습 필수코스.  </h5>
             <img src="https://t1.daumcdn.net/cfile/blog/999C0B3D5BDFD7221D"  >
             <figcaption>인천 연수구 명소 청량산(淸凉山)</figcaption>
 
     </article>
+    <br>
 </section>
 <br>
 <aside>

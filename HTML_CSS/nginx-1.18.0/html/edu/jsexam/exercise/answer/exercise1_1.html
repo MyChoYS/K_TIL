@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>배열 실습</title>
+</head>
+<body>
+    <script>
+        var arr = new Array(10, 5, 7, 21, 4, 8, 18);
+        var sum = arr[0];
+        var max = arr[0];
+        var min = arr[0];
+        for(var i=1; i < arr.length; i += 1)
+        {
+            sum += arr[i];
+            if(max<arr[i])
+                max = arr[i];
+            if(min>arr[i])
+                min = arr[i];
+        }
+        document.write("<h1>모든 원소의 합: "+sum+"</h1>");
+        document.write("<ul>");
+        document.write("<li>최대값: "+max+ "</li>");
+        document.write("<li>최소값: "+min+ "</li>");
+        document.write("</ul>");
+
+    </script>
+</body>
+</html>

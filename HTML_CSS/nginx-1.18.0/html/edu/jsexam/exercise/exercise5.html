@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <style>
+        button:nth-of-type(1) {
+	color : red;
+	font-size : 1.5em;
+        }
+        button:nth-of-type(2) {
+	color : blue;
+	font-size : 1.5em;
+        }
+        button:nth-of-type(3) {
+	color : green;
+	font-size : 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="tc4()">빨강색</button>
+    <button onclick="tc4()">파랑색</button>
+    <button onclick="tc4()">녹 색</button>
+    <hr>
+    <h2></h2>
+
+    <script>
+	    var h2dom = document.getElementsByTagName("h2");
+	    var but = document.getElementsByTagName("button");
+	    var d = new Date();
+	    var year = d.getFullYear();
+	    var month = d.getMonth() + 1;
+	    var day = d.getDate();
+	    console.log(but)
+
+	    function tc1() {
+	        h2dom[0].textContent = "오늘은" + year + "년" + month+ "월" + day+ "일"  + "입니다." ;
+	        h2dom[0].style.color = "red"
+	    }
+	     function tc2() {
+	        h2dom[0].textContent = "오늘은" + year + "년" + month+ "월" + day+ "일"  + "입니다." ;
+	        h2dom[0].style.color = "blue"
+	    }
+	     function tc3() {
+	        h2dom[0].textContent = "오늘은" + year + "년" + month+ "월" + day+ "일"  + "입니다." ;
+	        h2dom[0].style.color = "green"
+	    }
+
+	    function tc4() {
+	        if (but[0].textContent == "빨강색") {
+	            h2dom[0].textContent = "오늘은" + year + "년" + month+ "월" + day+ "일"  + "입니다.";
+	            h2dom[0].style.color = "red";
+	        }
+	        if( but[1].textContent == "파랑색"){
+	        h2dom[0].textContent = "오늘은" + year + "년" + month+ "월" + day+ "일"  + "입니다." ;
+	        h2dom[0].style.color = "blue";
+	        }
+	        if (but[2].textContent == "녹 색"){
+	        h2dom[0].textContent = "오늘은" + year + "년" + month+ "월" + day+ "일"  + "입니다." ;
+	        h2dom[0].style.color = "green";
+	        }
+	    }
+/*  함수 아큐먼트에 red,green,blue 지정해서 함수로 받아서햇어도 된다. 아규먼트 인수를 잘 활용해봅시다!
+      ex. function today(p){
+        if p == "red"
+        쏼라쏼라~
+        else if p == "blue"
+        쏼라쏼라
+      }
+*/
+    </script>
+</body>
+</html>
+

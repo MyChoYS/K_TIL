@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise4</title>
+</head>
+<body>
+<script>
+     function go() {
+        var num = Math.floor(Math.random()*3) + 1;
+        console.log(num)
+        if (num==1){
+            r=confirm("네이버?");
+            r;
+            if (r == true)
+            location.href = "http://www.naver.com/";
+            else
+            location.href = "http://localhost:8000/edu/first.html"
+        }
+        else if (num==2){
+            r=confirm("다음?");
+            r;
+            if (r == true)
+            location.href = "http://www.daum.net/";
+            else
+            location.href = "http://localhost:8000/edu/first.html"
+        }
+        else if (num==3){
+            r=confirm("구글?");
+            r;
+            if (r == true)
+            location.href = "http://www.google.com/";
+            else
+            location.href = "http://localhost:8000/edu/first.html"
+        }
+     }//만약에 이동버튼 없이 이동하고자 한다면?
+</script>
+<button onclick="go()">이동</button>
+</body>
+</html>

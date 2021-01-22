@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>자바스크립트 변수의 종류</h2>
+<hr>
+<script src="util.js"></script>
+<script>
+var num1 = 100;
+let num2 = 200; //let은 값 수정은 변경 가능하나, 다시 선언하는것은 불가능하다. 변수 만들때 변수명 중복 방지용
+const num3 = 300; //const는 상수취급, 값 변경 불가,재선언도 불가
+writeColor("num1 : " + num1, "h1", "red");
+writeColor("num2 : " + num2, "h1", "green");
+writeColor("num3 : " + num3, "h1", "blue");
+hr()
+num1 = '가';
+num2 = '나';
+//num3 = '다';
+writeColor("num1 : " + num1, "h2", "red");
+writeColor("num2 : " + num2, "h2", "green");
+writeColor("num3 : " + num3, "h2", "blue");
+hr()
+var num1 = 3.5;
+//let num2 = 4.7; //위처럼 그냥 num2 = '나' 식으로 값은 변경 가능하나, 이처럼 let num2는 선언 중복이기 때문에 오류발생.개꿀
+//const num3 = 5.3;
+writeColor("num1 : " + num1, "h3", "red");
+writeColor("num2 : " + num2, "h3", "green");
+writeColor("num3 : " + num3, "h3", "blue");
+</script>
+</body>
+</html>
+
+
+
+
+
+
