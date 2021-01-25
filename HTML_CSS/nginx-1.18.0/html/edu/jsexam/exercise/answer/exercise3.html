@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function calc(){
+    var result = 0;
+    if (arguments.length != 0) {
+        for (var i=0; i < arguments.length; i++){
+            if (isNaN(arguments[i])){
+                result = "숫자만 전달하세요.";
+                break;
+            }
+            else {
+                if(typeof arguments[i] != "number")
+                    result += Number(arguments[i]);
+                else
+                    result += arguments[i];
+                console.log(result);
+            }
+        }
+    }
+    return result;
+}
+document.write("<h3>" + calc() + "</h3>")
+document.write("<h3>" + calc(10,20,'30') + "</h3>")
+document.write("<h3>" + calc(10,'가나다',20) + "</h3>")
+document.write("<h3>" + calc('가나', '다나가') + "</h3>")
+document.write("<h3>" + calc(1,2,3,4,5) + "</h3>")
+
+function calcp(){
+    var result = 1;
+    if (arguments.length != 0) {
+        for (var i=0; i < arguments.length; i++){
+            if (isNaN(arguments[i])){
+                result = "숫자만 전달하세요.";
+                break;
+            }
+            else {
+                result *= arguments[i];
+                console.log(result);
+            }
+        }
+    } else {
+        result = 0;
+    }
+    return result;
+}
+document.write("<h3>" + calcp() + "</h3>")
+document.write("<h3>" + calcp(10,20,'30') + "</h3>")
+document.write("<h3>" + calcp(10,'가나다',20) + "</h3>")
+document.write("<h3>" + calcp('가나', '다나가') + "</h3>")
+document.write("<h3>" + calcp(1,2,3,4,5) + "</h3>")
+</script>
+</body>
+</html>
