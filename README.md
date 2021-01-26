@@ -8,7 +8,7 @@
 
 
 
-### [python](https://github.com/MyChoYS/K_TIL/tree/master/python)
+### [python & Django](https://github.com/MyChoYS/K_TIL/tree/master/python)
 
 
 
@@ -16,7 +16,7 @@
 
 
 
-### [ html & css & JavaScript](https://github.com/MyChoYS/K_TIL/tree/master/HTML_CSS/nginx-1.18.0/html/edu)
+### [ html & css & JavaScript & jQuery](https://github.com/MyChoYS/K_TIL/tree/master/HTML_CSS/nginx-1.18.0/html/edu)
 
 
 
