@@ -539,6 +539,243 @@ class 클래스명(부모클래스명) :
        var r =  함수명([아규먼트...]);
 
 
+함수명(10);
+함수명([10,20,30]);
+함수명(function () { 
+             .......
+             .......
+          });
+
+function sum() { ..... }
+
+var avg = function() {......}
+
+함수명(sum);
+함수명(avg);
+
+변수 정의 : 
+
+var v1 = 10
+v1 = 100
+
+function f1() {
+     var v2 = 20
+     
+}   
+
+<script src="과장님.js"></script>
+<script src="대리님.js"></script>
+
+ECMA
+
+var, let, const
+
+
+[ 자바스크립트의 객체 생성 방법 ]
+
+(1) 객체리터럴 방법
+(2) 클래스(생성자함수)를 이용하는 방법
+     new Array(), new Date()
+(3) 내장 객체 : 개발자가 객체를 생성하지 않아도 자바스크립트 엔진이 자동으로 생성해주는 객체
+     window, document, navigator, screen, location, DOM객체들...
+
+
+- 객체 리터럴 방법
+
+   배열객체 : [1, 'abc', true, 3.4], [ ]
+   객체 : { 속성명 : 속성값, 속성명 : 속성값, ..... }, {  }
+           속성명 : 자바스크립트의 식별자 규칙(명명규칙), 문자로시작, 문자, 숫자, _ 를 사용할 수 있다.   
+           속성값 : 숫자, 문자열, 논리값, 배열, 객체, 함수(메서드)
+   
+   obj = { 속성명1 : 100, 속성명2 : "둘리", 속성명3 : function() { .... } }
+   obj.속성명1 = 200
+   obj.속성명2 + " 승리"
+   obj.속성명3()
+
+   obj['속성명1'] = 200
+   obj['속성명2'] + " 승리"
+
+
+[ 참고 사이트 ]
+https://htmlcheatsheet.com/js/
+https://htmlcheatsheet.com/css/
+https://htmlcheatsheet.com/
+
+
+
+
+
+[ DOM(Document Object Model) 프로그래밍 ]
+- DOM 객체
+   브라우저가 웹 페이지(HTML)를 해석하고 랜더링할 때 인식된 각각의 태그들을 자바스크립트 객체로
+   생성하며 이 객체들을 DOM 객라고 한다.
+   생성되는 DOM 객체들은 부모 자식 관계를 적용하여 트리구조로 구성한다.
+
+   <body>
+      <h1>....</h1>
+      <ol>
+         <li>....</li>
+         <li>....</li>
+     </ol>
+   </body>
+                               document
+                                   body    
+                            h1              ol
+                            ....       li            li
+                                     ....            ....
+
+- DOM 프로그래밍에서 익혀야 하는것
+   1. 동적인 처리를 하려는 태그의 DOM 객체를 찾는 방법
+      document.getElementsByTagName("태그명")  --> DOM객체배열
+      document.getElementById("id속성값")  --> DOM객체
+      document.getElementsByClassName("class속성값")  --> DOM객체배열
+
+      document.querySelectorAll("CSS선택자")  --> DOM객체배열
+      document.querySelector("CSS선택자")  --> DOM객체
+
+      DOM 객체 타입 : Element 타입, Attribute 타입, Text 타입
+
+   2. 찾은 DOM 객체를 가지고 필요한 동적처리를 구현하는 방법
+      - 컨텐트 변경하기
+         dom.innerHTML = "<p>새로운내용</p>"
+         dom.textContent = "새로운내용"
+      - 스타일 바꾸기
+         dom.style.CSS속성명 = CSS속성값
+         	dom.style.color = "red"
+                dom.style.backgroundColor = "yellow" 
+      - 이벤트 핸들러 등록하기
+         구현방법 : 3가지
+
+         1. 인라인 이벤트 모델(지역적 방식) - 태그마다  속성으로 정의
+            <태그명 on이벤트명="이벤트핸들러코드">
+
+        2. 고전 이벤트 모델(전역적 방식) - <srcipt> 태그 안에 정의
+            DOM 객체를 찾는다.
+            dom.on이벤트명 = function () {     ...........................    }
+
+        3. 표준 이벤트 모델(전역적 방식) - <srcipt> 태그 안에 정의
+            DOM 객체를 찾는다.
+            dom.addEventListener("이벤트명", function () {     ...........................    })
+
+
+
+
+
+PRODOG - https://dklee1129.pythonanywhere.com/first_project/main/#
+
+에러없조 - https://kim672772.pythonanywhere.com/map/mymap/#mytitle
+
+카페 Olleh! - https://nanalyst.pythonanywhere.com/mainapp/home/
+
+Lunch 4 U - https://wnsghd394.pythonanywhere.com/projectapp/index/
+
+꿈꾸는 비행기 - https://4petppo.pythonanywhere.com/
+
+
+http://localhost:8000/edu/jsexam/exercise4_1.html
+
+first.html
+http://localhost:8000/edu/jsexam/first.html
+
+
+
+http://localhost:8000/edu/first.html
+
+
+
+
+   
+
+
+
+
+
+
+
+   a  *  b,  a  -  b, a / b  --> 숫자문자열을 자동으로 숫자로 변경하여 연산한다.
+
+   "100" * 10  --> 1000
+
+  a + b --> 문자열결합과 덧셈
+                  --------
+  "100" + 10  --> "10010"
+  Number("100") + 10 --> 110
+
+IT기반의 개발 - 60%
+R과 파이썬으로 구현하는 데이터 수집, 전처리, 분석, 시각화 - 40%
+융합프로젝트 
+------------------------------------------------
+- 사피, 다른 과정(네이버 부트캠프, SAC, 채용연계, 회사들이...)
+- 대학원
+- 분석 전문 회사에서 신입 채용(데이터 수집, 전처리)
+   :
+
+
+
+
+ jQuery()    --->  $()
+
+ $(document).xxxx()
+ $('CSS선택자').xxxx()
+ $(함수)  : 로드 이벤트 발생시 호출될 함수 등록 ( == $(document).ready(함수))
+ $.xxxx()  // jQuery 객체가 제공하는 클래스메서드
+ $('HTML태그문자열')
+$('CSS선택자', context).xxxx()
+                        DOM객체
+
+ $('button').click(함수)
+
+jQuery --> API 사용 방법이 일관성 있어서 API를 익히기 쉽다.
+
+   html() - innerHTML - 
+   text() - textContent -
+   val() - value -
+
+	html() - 첫번째
+	text() - 모두
+	val() - 첫번째
+                ---------------- getter(값을 읽는다.)
+	html("....")
+	text("....")
+	val("....")
+
+	html(함수)
+	text(함수)
+	val(함수)
+                ---------------- setter(값을 설정한다.)
+
+
+
+   css()	
+   attr()
+	css("CSS속성명")
+	attr("HTML태그속성명")
+	---------------- getter(값을 읽는다.) - 첫번째
+	css("CSS속성명", "CSS속성값")
+	attr("HTML태그속성명", "HTML태그속성값")
+
+	css("CSS속성명", 함수)
+	attr("HTML태그속성명", 함수)
+
+	css(자바스크립트객체)
+	attr(자바스크립트객체)
+	---------------- setter(값을 설정한다.)
+
+- jQuery의 이벤트 핸들러 구현
+
+(1)  $('...').on('이벤트이름', 함수)
+     $('...').on(자바스크립트객체)
+
+     $('...').off() 이벤트 핸들러를 해제
+
+(2) $('...').이벤트이름(함수)
+   
+
+위도: 37.5030042
+경도: 127.0507571
+
+37.5136773
+127.0618982
 
 
 
@@ -551,15 +788,9 @@ class 클래스명(부모클래스명) :
 
 
 
+빅데이터(C)반 인터페이스개발 평가 일자 : 2월 1일
 
-
-
-
-
-
-
-
-
+빅데이터(C)_성이름
 
 
 
