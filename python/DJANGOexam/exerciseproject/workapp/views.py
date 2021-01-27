@@ -9,13 +9,11 @@ def exercise1(request):
 
 def exercise2(request):
     if request.method == 'POST':
-        who = 'who'
-        context = {}
+        who = request.POST['who']
+        content = request.POST['content']
+        context = {'who' : who,'content':content}
     else:
-
         context = None
-
-
     return render(request,'exercise2.html',context)
 
 
