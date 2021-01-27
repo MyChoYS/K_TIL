@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise2</title>
+    <style>
+        input.op {
+        width : 200pt;
+        height : 300pt;
+        }
+    </style>
+</head>
+<body>
+<p>
+    {% if who %}
+         <h1>{{ who }}</h1>
+        <hr>
+
+    {% else %}
+        <form method="POST" action="/secondapp/exam6/">
+            {% csrf_token %} <!--포스트 방식에서 꼭 넣어야하는 구문-->
+            <h1>의견을 입력하세요</h1><hr>
+            <input type="text" name="who" placeholder="작성자 이름을 적어주세요" required><br>
+            <input type="text" class="op" name="content" placeholder="자신의 의견을 간단히 적어주세요." required>
+            <input type="submit" value="제출"><input type="reset" value="재작성">
+        </form>
+    {% endif %}
+</p>
+</body>
+</html>
