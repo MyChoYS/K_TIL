@@ -793,6 +793,53 @@ jQuery --> API 사용 방법이 일관성 있어서 API를 익히기 쉽다.
 빅데이터(C)_성이름
 
 
+cd c:\xxx\python_venv\djangovenv\Scripts
+cd c:\xxx\python_venv\djangovenv\Scripts> activate
+
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 0: invalid start byte
+
+
+
+
+
+
+http://localhost:8000/welcome/
+http://127.0.0.1:8000/welcome/     ---> firstapp.views.welcome
+http://localhost:8000/secondapp/    ---> views.exam1
+http://localhost:8000/secondapp/exam2/   ---> views.exam2
+http://localhost:8000/secondapp/exam2_1/
+-------------------------------------   URL 문자열
+                                    -------------------   URI
+
+
+HttpRequest - HTTP 프로토콜기반으로 요청이 왔을 때 요청 관련 정보를 제공하는 객체
+(요청처리)          뷰함수가 호출될 때 아규먼트로 전달된다.(장고서버가 객체를 생성한다)
+HttpResponse - HTTP 프로토콜기반으로 온 요청에 대한 응답시 사용하는 객체
+(응답처리)          응답 내용을 담게 된다.(HTML태그문자열, 템플릿을 사용한 랜더객체)
+
+
+[ Query 문자열 ]
+HTTP Client 가 HTTP Server 요청시 서버에서 요청하려는 대상의 URI 가 전달되는데
+이 때 함께 전달될 수 있는 문자열이다.
+- name=value 형식으로 구성되어야 한다.
+- 여러개의 name=value 가 사용될 때는 & 기호로 구분되게 구성해야 한다.
+- 영문과 숫자는 그대로 전달되지만 한글과 특수문자들은 %기호와 16진수 코드값으로 전달된다.(UTF-8)
+- 공백문자는 + 기호 또는 %20 로 전달된다.
+- Query 문자열을 가지고 HTTP Server에게 정보를 요청할 때는
+   두 가지 요청 방식중에서 한 개를 선택할 수 있다.
+   GET : Query 문자열이 외부에 보여진다. 요청 URL 뒤에 ? 기호와 함께 전달되기 때문이다.
+   POST : Query 문자열이 외부에 보여지지 않는다. Query 문자열의 길이에 제한이 없다. 
+
+https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=ABCabc+123%EA%B0%80%EB%82%98%EB%8B%A4
+
+
+
+
+
+
+
+
+
 
 
 

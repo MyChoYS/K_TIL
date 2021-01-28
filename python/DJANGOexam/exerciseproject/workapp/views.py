@@ -16,6 +16,17 @@ def exercise2(request):
         context = None
     return render(request,'exercise2.html',context)
 
+def product1(request):
+    if request.method == 'GET':
+        product = request.GET.getlist('product')
+
+        context = {'product': product}
+
+    return render(request,'product1.html',context)
+
+def basket1(request):
+    context = None
+    return render(request,'basket1.html',context)
 
 
 # Create your views here.

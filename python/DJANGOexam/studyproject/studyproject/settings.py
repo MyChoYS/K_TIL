@@ -52,11 +52,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'studyproject.urls'
-
+import os
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'studyproject','templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

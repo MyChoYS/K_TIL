@@ -13,7 +13,7 @@
 </head>
 <body>
 <p>
-    {% if who %}
+    {% if who and content %}
         <h1><span style="color:green">{{ who }}</span>님이 남긴 글입니다.</h1>
         <hr>
         <h3>{{content}}</h3>
@@ -25,6 +25,7 @@
             <input type="text" name="who" placeholder="작성자 이름을 적어주세요" required>
             <br><br>
             <input type="text" class="op" name="content" placeholder="자신의 의견을 간단히 적어주세요.">
+            <!--  <Textarea>로 해도됨,ㅡ 넓이와 높이는 rows='', cols=''로 조정-->
             <input type="submit" value="제출"><input type="reset" value="재작성">
         </form>
     {% endif %}
