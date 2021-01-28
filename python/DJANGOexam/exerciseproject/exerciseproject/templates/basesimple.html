@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+    {% block mycss2 %} {% endblock %}
     @font-face {
          font-family: 'MaplestoryOTFBold';
          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
@@ -18,7 +19,6 @@
 </head>
 <body>
     {% block mycss %}{% endblock %}
-    {% block mycontent %}
-    {% endblock %}
+    {% block mycontent %}{% endblock %}
 </body>
 </html>

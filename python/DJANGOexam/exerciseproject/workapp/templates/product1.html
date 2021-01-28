@@ -1,8 +1,32 @@
 {% extends 'basesimple.html' %}
 {% block mycontent %}
-        <form method="GET" action="/workapp/product1/">            
-            <h1>원하는 상품을 클릭해 주세요!!!</h1><hr>
-            <a href="/workapp/basket1/" name="product"><img src="\static\images\1.jpg"></a>
 
+    <style>
+        input {
+            width : 200pt;
+            border : 1px solid black;
+            margin : 10px;
+            box-shadow : 15px 15px rgb(0,0,0,.2);
+               }
+        form{       text-align : center;
+
+          }
+    </style>
+
+{% load static %}
+        <form action="{% url 'basket1' %}" method="GET" >
+             <h1>원하는 상품을 클릭해 주세요!!!</h1><hr>
+             <input type="image" src="{% static 'images/1.jpg' %}" name="product" value="p002">
+             <input type="image" src="{% static 'images/2.jpg' %}" name="product" value="p002">
+             <input type="image" src="{% static 'images/3.jpg' %}" name="product" value="p003">
+             <input type="image" src="{% static 'images/4.jpg' %}" name="product" value="p004">
+             <input type="image" src="{% static 'images/5.jpg' %}" name="product" value="p005">
+            <br>
+            <input type="image" src="{% static 'images/6.jpg' %}" name="product" value="p006">
+            <input type="image" src="{% static 'images/7.jpg' %}" name="product" value="p007">
+            <input type="image" src="{% static 'images/8.jpg' %}" name="product" value="p008">
+            <input type="image" src="{% static 'images/9.jpg' %}" name="product" value="p009">
+            <input type="image" src="{% static 'images/10.jpg' %}" name="product" value="p010">
         </form>
 {% endblock %}
+
