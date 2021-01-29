@@ -834,6 +834,56 @@ https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&qu
 
 
 
+https://docs.djangoproject.com/en/3.1/
+
+https://docs.djangoproject.com/ko/3.1/ref/templates/builtins/
+
+https://docs.djangoproject.com/ko/3.1/ref/templates/builtins/#std:templatefilter-date
+
+https://docs.djangoproject.com/ko/3.1/
+
+
+GML   ---> SGML    --->  XML - 규격화 시킨 문서를 만들고 싶을 때 사용, 태그명을
+                                                    용도에 맞게 직접 정의하여 사용 가능하다.
+                                         HTML - 페이지제작에 사용되는 전용 마크업언어
+
+
+[ AJAX 프로그래밍 핵심 내용 ]
+
+(1) JSON(XML) 형식으로 응답하는 뷰를 준비해야 한다.
+    (템플릿을 거치지 않고 뷰가 직접응답)
+
+(2) - JavaScript 만 사용해서 AJAX 요청을 구현하는 방법
+
+	var xhr = new XMLHttpRequest()
+                xhr.onload = 함수
+                xhr.open("GET", "대상URL", true)
+                xhr.send()
+
+
+        jQuery API를 사용하여 AJAX 요청을 구현하는 방법
+
+	$.getJSON("대상URL", 함수)
+	$.ajax( { ...................... })
+
+
+(서울시 빅데이터 URL)
+
+http://openapi.seoul.go.kr:8088/796143536a756e69313134667752417a/json/LampScpgmtb/1/100/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

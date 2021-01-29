@@ -20,9 +20,8 @@ def product1(request):
     return render(request,'product1.html')
 
 def basket1(request):
-        product = request.GET.get('product')
-        context = {'product': product}
-
+        product = request.GET.get("product")
+        context = { 'product':product        }
         return render(request,'basket1.html',context)
 
 

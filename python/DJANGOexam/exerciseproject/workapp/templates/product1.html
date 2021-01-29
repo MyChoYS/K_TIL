@@ -16,17 +16,18 @@
 {% load static %}
         <form action="{% url 'basket1' %}" method="GET" >
              <h1>원하는 상품을 클릭해 주세요!!!</h1><hr>
-             <input type="image" src="{% static 'images/1.jpg' %}" name="product" value="p002">
-             <input type="image" src="{% static 'images/2.jpg' %}" name="product" value="p002">
-             <input type="image" src="{% static 'images/3.jpg' %}" name="product" value="p003">
-             <input type="image" src="{% static 'images/4.jpg' %}" name="product" value="p004">
-             <input type="image" src="{% static 'images/5.jpg' %}" name="product" value="p005">
+            <a href="{% url 'basket1' %}?product=p001"  ><img src="{% static 'images/1.jpg' %}"></a>
+             <a href="{% url 'basket1' %}?product=p002"  ><img src="{% static 'images/2.jpg' %}"></a>
+             <a href="{% url 'basket1' %}?product=p003"  ><img src="{% static 'images/3.jpg' %}"></a>
+             <a href="{% url 'basket1' %}?product=p004"  ><img src="{% static 'images/4.jpg' %}"></a>
+             <a href="{% url 'basket1' %}?product=p005"  ><img src="{% static 'images/5.jpg' %}"></a>
             <br>
-            <input type="image" src="{% static 'images/6.jpg' %}" name="product" value="p006">
-            <input type="image" src="{% static 'images/7.jpg' %}" name="product" value="p007">
-            <input type="image" src="{% static 'images/8.jpg' %}" name="product" value="p008">
-            <input type="image" src="{% static 'images/9.jpg' %}" name="product" value="p009">
-            <input type="image" src="{% static 'images/10.jpg' %}" name="product" value="p010">
+            <a href="{% url 'basket1' %}?product=p006"  ><img src="{% static 'images/6.jpg' %}"></a>
+             <a href="{% url 'basket1' %}?product=p007"  ><img src="{% static 'images/7.jpg' %}"></a>
+             <a href="{% url 'basket1' %}?product=p008"  ><img src="{% static 'images/8.jpg' %}"></a>
+             <a href="{% url 'basket1' %}?product=p009"  ><img src="{% static 'images/9.jpg' %}"></a>
+             <a href="{% url 'basket1' %}?product=p010"  ><img src="{% static 'images/10.jpg' %}"></a>
+
         </form>
 {% endblock %}
 
