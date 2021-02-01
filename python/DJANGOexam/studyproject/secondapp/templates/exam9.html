@@ -1,15 +1,15 @@
 {% extends 'basesimple.html' %}
 
 {% block mycontent %}
-    <h1>정보를 작성하세요</h1><hr>
     {% if info %}
+        <h1>작성된 정보는 다음과 같습니다.</h1><hr>
         <h3>좋아하는 음식 : {{ info.info1 }}</h3>
         <h3>좋아하는 칼라 : {{ info.info2 }}</h3>
         <h3>태어난 년도 : {{ info.info3 }}</h3>
         <h3>메모 : {{ info.info4 }}</h3>
         <h3>생일 : {{ info.info5 }}</h3>
     {% else %}
-        <h1>정보를 작성하세요</h1><hr>
+        <h1>정보를 작성하세요.</h1><HR>
         <form method="post" action="http://localhost:8000/secondapp/exam9/">
             {% csrf_token %}
             좋아하는 음식 : <br>

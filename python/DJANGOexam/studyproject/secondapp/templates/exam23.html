@@ -55,7 +55,7 @@ function displayMovieRanking(n) {
   const d = today.getTime() - (n*24*60*60*1000);
   const targetday = new Date(d);
   const targetDt = getFormatDate(targetday);
-  alert(targetDt)
+  //alert(targetDt)
   $.getJSON('http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=75474bdfc6c0a4eb738939dd66c101b5&targetDt='+targetDt,
           function(jsonObj){
               var dom = $('tbody');
@@ -67,7 +67,7 @@ function displayMovieRanking(n) {
                                         "</td><td>"+jsonObj.boxOfficeResult.dailyBoxOfficeList[i].scrnCnt+"</td></tr>"
               }
               dom.html(content);
-              alert(jsonObj.boxOfficeResult.dailyBoxOfficeList[0].movieNm)
+              //alert(jsonObj.boxOfficeResult.dailyBoxOfficeList[0].movieNm)
           }
     );
 }

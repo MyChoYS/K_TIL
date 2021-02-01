@@ -1,19 +1,19 @@
-from datetime import datetime
-from django.shortcuts import render
-from django.http import  HttpResponse, JsonResponse
-from django.template import  loader
 import random
+from datetime import datetime
+from django.http import HttpResponse, JsonResponse
+from django.shortcuts import render
+from django.template import loader
 
-def exam1(request):
+def exam1(request) :
     template = loader.get_template('exam1.html')
-    return HttpResponse(template.render(None,request))
+    return HttpResponse(template.render(None, request))
 
 def exam2(request) :
     template = loader.get_template('exam2.html')
     if request.method == 'GET' :
-        msg = "GET방식으로 했군요...ㅎ"
+        msg = "GET방식으로 요청했군요...ㅎ"
     else :
-        msg = "POST방식으로 했군요...ㅎ"
+        msg = "POST방식으로 요청했군요...ㅎ"
     context = {'result' : msg}
     return HttpResponse(template.render(context, request))
 
@@ -22,7 +22,7 @@ def exam2(request) :
     if request.method == 'GET' :
        msg = request.GET.get("info1", "없음") + "-" + request.GET.get("info2", "없음") + "-" + request.GET.get("info3", "없음")
     else :
-       msg = request.POST.get("info1", "없음")  + "-" + request.POST.get("info2", "없음")  + "-" + request.POST.get("info3", "없음")
+       msg = request.POST.get("info1", "없음")  + "=" + request.POST.get("info2", "없음")  + "=" + request.POST.get("info3", "없음")
     context = {'result' : msg}
     return HttpResponse(template.render(context, request))'''
 
@@ -39,7 +39,7 @@ def exam3(request) :
     return render(request, 'exam3.html', context)
 
 def exam4(request) :
-    context = {'numbers':[1,2,3,7,5,6]}
+    context = {'numbers':[1,2,3,4,5,6]}
     return render(request, 'exam4.html', context)
 
 def exam5(request) :
@@ -49,9 +49,9 @@ def exam5(request) :
     return render(request, 'exam5.html', context)
 
 def exam6(request) :
-    if request.method == 'POST': ##처음 웹페이지를 부르면 get방식, 하지만 여기선 포스트를 했으므로 첫화면은 false구문을보여줌
-        num = int(request.POST['number']) ##html에서 15행 number의 값을 전달받고 그것을 num이 저장.
-        context = { 'num' : num*num } ##html에서 사용할 변수와 변수값 저장용도라고 생각하자
+    if request.method == 'POST':
+        num = int(request.POST['number'])
+        context = { 'num' : num*num }
     else :
          context = None
     return render(request, 'exam6.html', context)
@@ -80,7 +80,7 @@ def exam9(request):
     context = None
     foodstr = ""
     if request.method == 'POST':
-        foods = request.POST.getlist("food", "없음") ##여러개 음식 선택한 것을 리스트화 food체크햇음 받고 없으면 '없음'으로
+        foods = request.POST.getlist("food", "없음")
         for f in foods :
             foodstr += f+" "
         fcolor = request.POST.get("fcolor", "없음")
@@ -204,7 +204,7 @@ def json1(request):
         'message' : '안녕 파이썬 장고',
         'items' : ['가나다', '파이썬', '장고', '자바스크립트', 'CSS3'],
         'num' : 100
-    }, json_dumps_params={'ensure_ascii':False}) ##한글을 포함할거면 json_dumps_params를 넣어줘야 한다.
+    }, json_dumps_params={'ensure_ascii':False})
 
 def json2(request):
     data = [{'name': 'Peter', 'email': 'peter@example.org'},
@@ -280,4 +280,5 @@ def kkmap6(request) :
 def kkmap7(request) :
     return render(request, "kkmap7.html", None)
 
-# Create your views here.
+def test(request) :
+    return render(request, "test.html", None)

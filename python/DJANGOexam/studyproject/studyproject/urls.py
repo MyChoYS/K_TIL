@@ -19,7 +19,6 @@ import firstapp.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('welcome/',firstapp.views.welcome),
-    path('secondapp/',include('secondapp.urls')),
-
+    path('welcome/', firstapp.views.welcome),
+    path('secondapp/', include('secondapp.urls')),
 ]

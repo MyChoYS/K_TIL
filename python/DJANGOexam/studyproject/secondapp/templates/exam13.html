@@ -25,7 +25,7 @@
     <hr>
 
     {% for food in foods %}
-        {% if forloop.first %}
+        {% if forloop.last %}
             <p>짜장면엔 고추가루지!!</p>
         {% else %}
             <p>{{ food }}</p>

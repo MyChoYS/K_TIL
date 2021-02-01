@@ -1,0 +1,27 @@
+{% extends 'basesimple.html' %}
+
+{% block mycontent %}
+{% if name %}
+    <h2><span>{{ name }}</span>님이 남긴 글입니다.</h2>
+    <hr>
+    <h3>{{ memo }}</h3>
+{% else %}
+  <h2>의견을 남겨 주세요</h2>
+	<hr>
+	<form method="post" action="/secondapp/exercise2/">
+        {% csrf_token %}
+		<input type="text" name="name" value="" placeholder="작성자 이름을 입력해 주세요"><br>
+		<textarea style="margin-top:5px" name="memo" cols="30" rows="5" placeholder="자신의 의견을 간단히 적어주세요."></textarea>
+ 		</textarea><br>
+ 		<button type="submit" value="Submit">제출</button>
+ 		<button type="reset" value="Reset">재작성</button>
+	</form>
+{% endif %}
+
+{% endblock %}
+
+{% block mycss %}
+  span {
+  color : red;
+  }
+{% endblock %}

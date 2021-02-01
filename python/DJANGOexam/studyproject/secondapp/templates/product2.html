@@ -36,9 +36,9 @@ section {
     $('img').each(function(index, dom) {
 		$(dom).click(function() {
 			if (index < 10)
-				pid = 'p00'+(index+1)
+				pid = 'p00'+(index+1);
 			else
-				pid = 'p0'+(index+1)
+				pid = 'p0'+(index+1);
 			$.getJSON("{% url 'basket2' %}?pid="+pid, function(jsonObj) {
 				$("output").html("<h3>"+jsonObj.pid+"상품을 "+ jsonObj.count+"개 선택하셨네요<h3>");
 			});

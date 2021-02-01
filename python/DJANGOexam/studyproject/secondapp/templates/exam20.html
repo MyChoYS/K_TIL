@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <div class="jumbotron text-center">
-	<h1>Django+AJAX</h1>
+<div class="jumbotron text-center">
+  <h1>Django+AJAX</h1>
   <h4>AJAX  기술을 이용해서 Django 서버 프로그램을 요청합니다.</h4>
-  </div>
+</div>
 <div class="card-deck">
   <div class="card bg-primary">
     <div class="card-body text-center">
@@ -30,14 +30,12 @@
 <script>
 $(document).ready(function () {
   $('p').click(function(e) {
-   	$.getJSON('/secondapp/json3/',  function(data) {
+   	$.getJSON('/secondapp/json3/', function(data) {
    	      content = "";
-   	      console.log(data)
+   	      console.log(data);
 		  $.each(data, function(key, value) {
-		        console.log(key)
-		        console.log(value)
+                console.log("key : "+key + "   value : " + value);
 		        content += value + "<br>";
-		        console.log(content)
 		  });
 		  $(e.target).html(content);
 	});
