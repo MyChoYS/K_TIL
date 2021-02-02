@@ -21,4 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('welcome/', firstapp.views.welcome),
     path('secondapp/', include('secondapp.urls')),
+    path('forthapp/', include('forthapp.urls')),
+    path('visitorapp/', include('visitorapp.urls')),
+    path('accountapp/', include('accountapp.urls')),
 ]

@@ -32,6 +32,9 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'thirdapp',
+    'forthapp',
+    'visitorapp',
+    'accountapp',
     'secondapp',
     'django.contrib.admin',
     'django.contrib.auth',
