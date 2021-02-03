@@ -30,7 +30,7 @@ def register(request):
                             password = password)
             auth.login(request, user)
             redirect("index.html")
-    return render(request, 'index.html', res_data)
+    return render(request, 'register.html', res_data)
 
 
 def login(request):
