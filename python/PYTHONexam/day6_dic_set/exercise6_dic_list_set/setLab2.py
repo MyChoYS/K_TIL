@@ -1,7 +1,7 @@
 import random
 num = set()
 count=0
-for i in range(946):
+for i in range(951):
     num = set()
     while len(num) < 6:
         lotto = random.randint(1, 45)
