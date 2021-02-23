@@ -81,14 +81,14 @@ a1*100
 
 # factor 실습
 
-score <- c(1,3,2,4,2,1,3,5,1,3,3,3)
+score <- c(1,3,2,4,2,1,3,5,1,3,3,3) 
 class(score)
 summary(score)
 
 f_score <- factor(score)
 class(f_score)
 f_score
-summary(f_score)
+summary(f_score) #포켓몬 타입 분류할 때 편하겠네
 levels(f_score)
 
 
@@ -117,7 +117,7 @@ levels(day1)
 week.korabbname <- c("일", "월", "화",
                      "수", "목", "금", "토")
 day2 <- factor(data1, 
-               levels=week.korabbname)
+               levels=week.korabbname) #data1에는 일,금이 없으므로 레벨을 따로만들어 지정
 day2
 summary(day2)
 levels(day2)
@@ -126,14 +126,14 @@ levels(day2)
 
 btype <- factor(
   c("A", "O", "AB", "B", "O", "A", "O"), 
-  levels=c("A", "B", "O"))
+  levels=c("A", "B", "O")) #레벨설정할때 벡터에 없으면 NA값으로 처리한다.
 btype
 summary(btype)
 levels(btype)
 
 gender <- factor(c(1,2,1,1,1,2,1,2), 
                  levels=c(1,2), 
-                 labels=c("남성", "여성"))
+                 labels=c("남성", "여성")) #라벨을 통해 1=남성, 2=여성
 gender
 summary(gender)
 levels(gender)
@@ -145,6 +145,7 @@ data()
 iris; head(iris);tail(iris) 
 View(iris)
 str(iris)
+summary(iris)
 
 library()
 
@@ -154,13 +155,14 @@ name <- c('Apple','Banana','Peach','Berry')
 qty <- c(5,2,7,9)
 price <- c(500,200,200,500)
 fruit <- data.frame(no, name, qty, price)
+#fruit <- data.frame(no, name, qty, price, stringsAsFactors = T)
 str(fruit)
 View(fruit)
 
 fruit[1,]
 fruit[-1,]
 fruit[,2]
-fruit[,3] # fruit[,3, drop=F]
+fruit[,3] # fruit[,3, drop=F] #drop > 행렬구조 유지 여부
 fruit[, c(3,4)]
 fruit[3,2]
 fruit[3,1]
@@ -203,19 +205,20 @@ df_midterm2
 df_midterm2$영어
 
 df <- data.frame(var1=c(4,3,8), 
-                 var2=c(2,6)) # 오류
+                 var2=c(2,6)) # 오류(=행의 갯수가 다르기 때문)
 df <- data.frame(var1=c(4,3,8), 
                  var2=c(2,6,1))
 str(df)
-df$var_sum <- df$var1 + df$var2
+df$var_sum <- df$var1 + df$var2 #파생변수 #데이터프레임에 열 추가
 df$var_mean <- df$var_sum/2
 df$result <- ifelse(df$var1>df$var2, 
                     "var1이 크다", "var1이 작다")
-
-getwd() # setwd('xxx')
+df
+getwd() #get working directory  #setwd('xxx') 
 
 #csv파일열기
-score <- read.csv("data/score.csv")
+score <- read.csv("C:/git_hub/K_TIL/R/Rexam/data/score.csv")#절대패스
+#score <- read.csv("data/score.csv")#상대패스
 score
 str(score)
 score$sum <- 
@@ -226,8 +229,8 @@ score
 
 summary(score$result)
 table(score$result)
-summary(factor(score$result))
-score$result = factor(score$result) 
+summary(factor(score$result)) #factor를 summary!
+score$result = factor(score$result) #factor 처리
 str(score)
 summary(score)
 score$id = as.character(score$id)
@@ -241,7 +244,7 @@ score
 # order() 와 sort()
 v <- c(10,3,7,4,8)
 sort(v)
-order(v)
+order(v) #인덱스번호로 정렬
 
 emp <- read.csv(file.choose())
 emp
@@ -264,7 +267,7 @@ emp[,"ename",drop=F]
 emp[2]
 emp["ename"] 
 
-# emp에서 직원이름, 잡, 샐러리
+# emp에서 직원이름, 잡(직무), 샐러리(급여)
 emp[,c(2,3,6)]
 emp[,c("ename","job","sal")]
 subset(emp,select = c(ename, job, sal))
@@ -283,22 +286,27 @@ emp[c(F,F,F,F,F,F,F,F,T,F,F,F,
 emp[emp$ename=="KING",]
 subset(emp,subset=emp$ename=="KING")
 subset(emp,emp$ename=="KING") 
+subset(emp,emp$ename=="KING",select = c(job)) 
 
+is.na(emp$name) #name이라는 col이 없기 때문
+is.na(emp$comm) #값이 NA일 경우에 TRUE
 
+#커미션이 정해지지 않은 직원들의 모든 정보 출력
+emp[is.na(emp$comm),] #NA값이 TRUE이면값이 NA라는 뜻이므로 커미션을 받지 않은 상태
 
 # 커미션을 받는 직원들의 모든 정보 출력
-emp[!is.na(emp$comm),]
+emp[!is.na(emp$comm),] 
 subset(emp,!is.na(emp$comm)) 
 View(emp)
-# select ename,sal from emp where sal>=2000
+# select ename,sal from emp where sal>=2000 (subset과 인덱싱 방법으로..)
 subset(emp, emp$sal>= 2000, 
        c("ename","sal"))
 subset(emp, select=c("ename","sal"), 
        subset= emp$sal>= 2000)
-emp[emp$sal>=2000,c("ename","sal")]
+emp[emp$sal>=2000,c("ename","sal")] #인덱싱 방법 
 
 # select ename,sal from emp where sal between 2000 and 3000
-subset(emp, sal>=2000 & sal<=3000, c("ename","sal"))
+subset(emp, sal>=2000 & sal<=3000, c("ename","sal")) # && x
 emp[emp$sal>=2000 & emp$sal <=3000, c("ename","sal")]
 
 
