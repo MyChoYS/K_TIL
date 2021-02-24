@@ -8,14 +8,14 @@ df1
 
 #문제3
 df2 <- data.frame(col1=c(1:5),col2=c(letters[1:5]),col3=c(6:10))
-df2
+df2 #위의 화살표 연산자는 함수 밖에서만 사용 가능
 
 #문제4
 제품명 <- c("사과","딸기","수박")
 가격 <- c(1800, 1500, 3000)
 판매량 <- c(24,38,13)
 df3 <- data.frame(제품명,가격,판매량)
-df3
+df3 ; class(df3$제품명) 
 
 #문제5
 mean(df3$가격)
@@ -32,8 +32,9 @@ df4$stat <- stat
 #b
 df4$score <- df4$math + df4$stat
 #c
-df4$grade <- ifelse(df4$score >=150,"A",ifelse(df4$score >= 100,"B",
-                                              ifelse(df4$score>=70,"C","D")))
+df4$grade <- ifelse(df4$score >=150,"A",
+                    ifelse(df4$score >= 100,"B",
+                             ifelse(df4$score>=70,"C","D")))
 df4
 
 #문제7
