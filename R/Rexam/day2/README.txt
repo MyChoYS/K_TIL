@@ -13,3 +13,5 @@ subset() 을 통해 (데이터,조건,select=컬럼명(열이름))
 Lab2:
 rbind(), cbind() 를 통해 matrix 에 행 또는 열 추가 가능
 
+Lab3: read.csv, order를 통해 데이터 정렬 인덱싱 & subset
+

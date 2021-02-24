@@ -1,18 +1,24 @@
+num <- 1:10
+num = 10:1
+100:200 -> num
 num1 <- 11 # c(11)
 num2 <- 3  # c(3)
 num1 / num2
-num1 %% num2
-num1 %/% num2
+num1 %% num2 #나머지
+num1 %/% num2 #몫
 
 
 #LIST
 v<-c(1,2,3)
 l<-list(1,2,3) 
+v * 10 #벡터 곱(연산)은 가능하지만
+l*10   #리스트 연산은 불가하다.
 v
 l
 v[1] 
 l[1] 
-l[[1]] 
+l[[1]]
+l[[1]] * 10 #가능
 
 lds <- list(1,2,3) 
 lds
@@ -29,7 +35,7 @@ lds[[2]]
 lds[["B"]]
 lds$B
 
-
+#named list
 a<-list(
   a = 1:3,
   b = "a string",
@@ -40,13 +46,13 @@ a<-list(
 a[1]
 a[[1]] # a[["a"]]
 a$a
-a[[1]][1]
+a[[1]][2]
 a$a[1]
 a[1]+1
 a[[1]]+1
 a[[1]][2] <- 100
 new_a <- unlist(a[1])
-a[1]; new_a
+a[1]; new_a #a가 $a, named list였으므로 unlist를 하면 이름a에 순서대로 1,2,3이 붙음
 names(a) <- NULL
 names(new_a) <- NULL
 
@@ -54,7 +60,7 @@ print(100)
 print(pi)
 data <- "가나다"
 print(data)
-print(data, quote=FALSE)
+print(data, quote=FALSE) #quote= 인용부호 생략기능 
 v1 <- c("사과", "바나나", "포도")
 print(v1)
 print(v1, print.gap=10)
@@ -65,7 +71,7 @@ cat("aaa", "bbb", "ccc", "ddd", "\n")
 cat(v1, "\n")
 cat(v1, sep="-", "\n")
 
-print(paste("R", "은 통계분석", "전용 언어입니다."))
+print(paste("R", "은 통계분석", "전용 언어입니다.")) #print는 한번에 여러개x
 cat("R", "은 통계분석", "전용 언어입니다.", "\n")
 
 ls()
@@ -87,61 +93,9 @@ lines_utf8 <- readLines("data/sample_utf8.txt",encoding="UTF-8")
 df2 <- read.table("data/product_click.log", stringsAsFactors = T)
 str(df2)
 head(df2)
-summary(df2$V2)
+summary(df2$V2) #224행부터 for문 이용
 
 
-for(data in month.name) 
-  print(data)
-
-for(data in month.name) 
-  cat(data)
-
-sum <- 0
-for(i in 5:15){
-  if(i%%10==0){
-    break
-  }
-  sum <- sum + i
-  print(paste(i,":",sum))
-}
-
-sum <- 0
-for(i in 5:15){
-  if(i%%10==0){
-    break
-  }
-  sum <- sum + i
-  cat(i,":",sum,"\n")
-}
-
-sum <-0
-for(i in 5:15){
-  if(i%%10==0){
-    next;  #continue
-  }
-  sum <- sum + i
-  print(paste(i,":",sum))
-}
-
-sumNumber <- 0
-while(sumNumber <= 20) { 
-  i <- sample(1:5, 1) 
-  sumNumber <-sumNumber+i; 
-  cat(sumNumber,"\n")
-} 
-
-repeat {
-  cat("ㅋㅋㅋ\n")
-}
-
-sumNumber <- 0
-repeat { 
-  i <- sample(1:5, 1) 
-  sumNumber <-sumNumber+i; 
-  cat(sumNumber,"\n")
-  if(sumNumber > 20)
-    break;
-}
 
 #제어문
 #if else
@@ -153,17 +107,23 @@ if(randomNum>5){
 }
 
 if(randomNum%%2 == 1){
-  cat(randomNum,";홀수\n")
+  cat(randomNum,";홀수","\n")
+  cat("종료")
 }else{
   cat(randomNum,";짝수","\n")
+  cat("종료")
 }
 
 
 if(randomNum%%2 == 1){
-  cat(randomNum,";홀수","\n")
+  cat(randomNum,";홀수")
+  cat("종료")
 }else{
-  cat(randomNum,";짝수","\n")
+  cat(randomNum,";짝수")
+  cat("종료")
 }
+
+
 
 score <- sample(0:100, 1)  # 0~100 숫자 한 개를 무작위로 뽑아서
 if (score >=90){
@@ -182,8 +142,8 @@ if (score >=90){
 #for 실습
 for(data in month.name) 
   print(data)
-for(data in month.name)print(data);print("ㅋㅋ")
-for(data in month.name){print(data);print("ㅋㅋ")}
+for(data in month.name)print(data);print("hello")
+for(data in month.name){print(data);print("hello")} #하고자 하는것이 2개이상이면 {}
 
 for(n in 1:5)
   cat("hello?","\n")
@@ -245,7 +205,7 @@ while (i<=10) {
 month <- sample(1:12,1)
 month <- paste(month,"월",sep="") # "3월"  "3 월"
 result <- switch(EXPR=month,
-                 "12월"=,"1월"=,"2월"="겨울",
+                 "12월"=,"1월"=,"2월"="겨울", 
                  "3월"=,"4월"=,"5월"="봄",
                  "6월"=,"7월"=,"8월"="여름",
                  "가을")
@@ -257,11 +217,65 @@ switch(EXPR = num,"A","B","C","D")
 
 for(num in 1:10){
   cat(num,":",switch(EXPR = num,"A","B","C","D"),"\n")
-}
+} #numeric의 경우에는 기본값 지정 불가, 무조건 1대1 대응
 
 for(num in 1:10){
   num <- as.character(num) 
   cat(num,":",switch(EXPR = num,
                      "7"="A","8"="B","9"="C","10"="D","ㅋ"),"\n")
+} #이렇게 character로 바꿔줘야 기본값 지정 가능 
+
+
+
+for(data in month.name) 
+  print(data)
+
+for(data in month.name) 
+  cat(data)
+
+sum <- 0
+for(i in 5:15){
+  if(i%%10==0){
+    break
+  }
+  sum <- sum + i
+  print(paste(i,":",sum))
 }
 
+sum <- 0
+for(i in 5:15){
+  if(i%%10==0){
+    break
+  }
+  sum <- sum + i
+  cat(i,":",sum,"\n")
+}
+
+sum <-0
+for(i in 5:15){
+  if(i%%10==0){
+    next;  #continue #10부분만 밑에를 무시하고 다시 
+  }
+  sum <- sum + i
+  print(paste(i,":",sum))
+}
+
+sumNumber <- 0
+while(sumNumber <= 20) { 
+  i <- sample(1:5, 1) 
+  sumNumber <-sumNumber+i; 
+  cat(sumNumber,"\n")
+} 
+
+repeat {
+  cat("ㅋㅋㅋ\n")
+}
+
+sumNumber <- 0
+repeat { 
+  i <- sample(1:5, 1) 
+  sumNumber <-sumNumber+i; 
+  cat(sumNumber,"\n")
+  if(sumNumber > 20)
+    break;
+}

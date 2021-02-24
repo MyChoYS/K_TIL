@@ -27,7 +27,7 @@ gender <- factor(c("M","F","M","F","M"))
 math <- c(85,76,99,88,40)
 (df4 <- data.frame(name,gender,math))
 #a
-stat <- c(79,73,95,82,35)
+stat <- c(76,73,95,82,35)
 df4$stat <- stat
 #b
 df4$score <- df4$math + df4$stat
@@ -39,19 +39,19 @@ df4
 
 #문제7
 myemp <- read.csv("C:/git_hub/K_TIL/R/Rexam/data/emp.csv")
-str(myemp);summary(myemp)
+str(myemp);summary(myemp) #불러올떄 stringAsfactors로 하면 factor로 불러올수있음
 
 #문제8
 myemp[c(3,4,5),]
 
 #문제9
-myemp[,-4]
+myemp[,-1] #사번 != 4번, ㅋㅋㅋㅋ
 
 #문제10
-myemp["ename"]
+myemp["ename"]; myemp[2]
 
 #문제11
-myemp[c("ename","sal")]
+myemp[c("ename","sal")] #myemp[,c("ename","sal")]
 
 #문제12
 myemp[myemp$job=="SALESMAN",c("ename","sal","job")]
@@ -62,17 +62,19 @@ myemp[myemp$sal>=1000 & myemp$sal <=3000,c("ename","sal","deptno")]
 #문제14
 myemp[myemp$job != "ANALYST",c("ename","job")]
 
-#문제15
-subset(myemp,myemp$job=="SALESMAN" | myemp$job=="ANALYST",select = c("ename","job"))
+#문제15 #subset을 이용할 시에 데이터$를 안쓰고 열이름만 써도 조건 가능하다.
+subset(myemp,job=="SALESMAN" | myemp$job=="ANALYST",select = c("ename","job"))
 
 #문제16
 myemp[is.na(emp$comm),]
 
 #문제17
 myemp[order(myemp$sal),]
+order(myemp$sal) #order에서 나오는 값을 기준으로 행의 인덱스로 전달 
 
 #문제18
 str(myemp)
+dim(myemp)#행과 열 갯수만을 보려면 dim을 쓰자.
 
 #문제19
 myemp$deptno <- as.factor(myemp$deptno)
