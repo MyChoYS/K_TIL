@@ -127,13 +127,13 @@ func3(9, 19)  # 30
 func4 <- function(x=100, y=200, z) {
   return(x+y+z)
 }
-func4()
+func4() #에러
 func4(10,20,30)
 func4(x=1,y=2,z=3)
 func4(y=11,z=22,x=33)
 func4(z=1000)  
 
-# 쉬트에 있는 함수 코드
+# 쉬트에 있는 함수 코드(구문보충에 있는 함수코드)
 f1 <- function() print("TEST")
 f1()
 r <- f1()
