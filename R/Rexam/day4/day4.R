@@ -80,14 +80,14 @@ ls()
 
 #read file data
 nums <- scan("data/sample_num.txt")
-word_ansi <- scan("data/sample_ansi.txt",what="")
+word_ansi <- scan("data/sample_ansi.txt",what="") #데이터를 벡터로 불러올때
 words_utf8 <- scan("data/sample_utf8.txt", what="",encoding="UTF-8")
 words_utf8_new <- scan("data/sample_utf8.txt", what="")
 lines_ansi <- readLines("data/sample_ansi.txt")
 lines_utf8 <- readLines("data/sample_utf8.txt",encoding="UTF-8")
 
-df2 <- read.table("data/product_click.log", stringsAsFactors = T)
-str(df2)
+df2 <- read.table("data/product_click.log", stringsAsFactors = T) #read.csv
+str(df2) #데이터 구분을 ,로 했을 경우에는 csv 나머지는 table로 불러온다.
 head(df2)
 summary(df2$V2)
 
@@ -179,10 +179,12 @@ f7<- function(...) {
   return(sum)
 }
 f7(10,20,30)
-f7(10,20,'test', 30,40)
+f7(10,20,'test', 30,40) #???? 
+#아 밑의 호기심 함수처럼 아규먼트에 하나라도 문자열이 들어가 있으면,
+#전부 chr로 인식해버림 그래서 모든 숫자가 따로 print되어서 나오는 것!!!!!
 
 f8<- function(...) {
-  data <- list(...)
+  data <- list(...) ## point f7과의 차이점점
   sum <- 0;
   for(item in data) {
     if(is.numeric(item))
@@ -195,3 +197,14 @@ f8<- function(...) {
 
 f8(10,20,30)
 f8(10,20,"test", 30,40)
+##################################
+hogisim <- function(...){
+  daa <- c(...)
+  return(str(daa))
+}
+hogisim(1,"a",3,4,5)
+hogisim(1,3,4,5)
+##################################
+
+
+

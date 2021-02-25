@@ -13,10 +13,8 @@ exam2(10)
 
 #문제3
 exam3 <- function(num1,num2){
-  if (num1 > num2){
+  if (num1 >= num2){
     return(num1-num2)
-  }else if (num1 == num2){
-    return(0)
   }else{
     return(num2-num1)
   }
@@ -59,7 +57,7 @@ exam4(0,"%/%",0)
 #문제5
 exam5 <- function(a,b="#"){
   if (a<0){
-    return()
+    return(NULL)
   }
   if (is.character(b) != T){
     b="#"
@@ -80,17 +78,17 @@ exam6 <- function(...){
       print("NA는 처리불가")
     }else{
       if (i >= 85){
-        print("상")
+        print(paste(i,"점은 상등급입니다"))
       }else if (i >= 70){
-        print("중")
+        print(paste(i,"점은 중등급입니다"))
       }else{
-        print("하")
+        print(paste(i,"점은 하등급입니다"))
       }
     }
   }
 }
 exam6(80,50,70,66,NA,35)
-
+exam6(c(80,50,70,66,NA,35))
 
 
 
