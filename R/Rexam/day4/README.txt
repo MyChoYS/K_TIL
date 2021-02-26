@@ -26,3 +26,7 @@ ex. str(hogisim(1,"a",3,4,5) ) -> chr로 나온다. <->  str(hogisim(1,3,4,5) ) 
 scan은 처음 불러오면 모든 데이터를 숫자로 인식함.(numeric)
  **즉, 수치데이터 불러올 때 유용**
 
+예:
+xxx.csv : read.csv() - data.frame()
+xxx.log : read.table() - data.frame()
+xxx.txt : scan() - vector => what= 을 이용하여 부르면 chr의 형태로 데이터를 불러온다,*    			   readLines() - vector
