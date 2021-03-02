@@ -1,5 +1,5 @@
 #문제1
-countEvenOdd <- function(...){
+countEvenOdd <- function(...){ #가변변수 말고 매개변수 1개만 이어따..
   numlist <- c(...)
   if (is.vector(numlist)){ 
   even <- 0
@@ -37,6 +37,7 @@ vmsum(1,2,3,4,5)
 vmsum()
 vmsum("a")
 
+#문제3
 vmsum2 <- function(...){
   numlist <- c(...)
   if(is.vector(numlist)){
@@ -63,7 +64,7 @@ mysum <- function(...){
   if (is.vector(numlist)){
     if(any(is.na(numlist))){
       numlist[which(is.na(numlist))] <- min(numlist[-which(is.na(numlist))])
-      warning("NA를 최저값으로 변경하여 처리함")
+      warning("NA를 최저값으로 변경하여 처리함")#NA인 값을 뺀 min
     }
     for (i in numlist){
       if (count %% 2 == 0 ){
@@ -89,15 +90,14 @@ mysum(1,2,3,4,NA,5)
 #문제5
 myExpr <- function(f){
   if(is.function(f)){
-    lotto <- function(){
-      return(c(sample(1:45,6)))
-    }
-    return(lotto())
-  }else{
+    return (f(sample(1:45,6)))
+    }else{
     stop("함수가 아니면 수행 안할꺼임!")
   }
 }
 myExpr(min)
+myExpr(sum)
+myExpr(sort)
 myExpr(123)
 
 #문제6
@@ -115,7 +115,7 @@ createVector1(1,2,3)
 createVector1(1,NA)
 createVector1()
 
-#문제7 *****
+#문제7 *****? 이거 맛따
 createVector2 <- function(...){
   arg = list(...)
   if (is.null(arg)){
