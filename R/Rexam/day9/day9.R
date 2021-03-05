@@ -1,34 +1,37 @@
 #동적 스크래핑 #파이썬에서도 셀레늄을 똑같이 사용할 것 
 
-#install.packages("RSelenium")
-library(RSelenium)
+#install.packages("RSelenium") + 셀레늄서버 기동 
+#셀레늄 폴더로 cmd 이동시킨 후에,
+#java -Dwebdriver.chrome.driver="chromedriver.exe" -jar selenium-server-standalone-4.0.0-alpha-1.jar -port 4445 기동
+library(RSelenium) 
 
 remDr <- remoteDriver(remoteServerAddr = "localhost" , port = 4445, browserName = "chrome")
 remDr$open() #크롬 업데이트 해야한다 
         View(remDr)
 remDr$navigate("http://www.google.com/")
 
-webElem <- remDr$findElement(using = "css", "[name = 'q']")
-webElem$sendKeysToElement(list("PYTHON", key = "enter"))
+webElem <- remDr$findElement(using = "css selector", "[name = 'q']") #using에 xpath로 설정해도 된다.
+webElem$sendKeysToElement(list("PYTHON", key = "enter")) #프로그램으로 웹 실행
 
 
 remDr$navigate("http://www.naver.com/")
 str(remDr)
 
-webElem <- remDr$findElement(using = "css", "#query")
+webElem <- remDr$findElement(using = "css selector", "#query")
 webElem$sendKeysToElement(list("PYTHON", key = "enter"))
 str(webElem)
 
 
 # 이해를 돕기 위해 간단한 웹페이지를 크롤링하고 스크래핑 함
 url <- "http://unico2013.dothome.co.kr/crawling/tagstyle.html"
-remDr$navigate(url)
+remDr$navigate(url) #정적페이지는 정적페이지 수집방법, 동적페이지 수집방법 둘 다 사용가능 
 
 #단수형으로 노드 추출 using=css selector 
 one<-remDr$findElement(using='css selector','div') # 노드 한 개 리턴(webElement 객체)
 one$getElementTagName()
 one$getElementText()
 one$getElementAttribute("style")
+View(one)
 
 # 단수형으로 없는 노드 추출
 one<-NULL
@@ -40,7 +43,7 @@ one<-NULL
 try(one<-remDr$findElement(using='css selector','p')) 
 
 
-#복수형으로 노드 추출
+#복수형으로 노드 추출 #태그 여러개 
 more<-remDr$findElements(using='css selector','div')
 sapply(more, function(x) x$getElementTagName())
 sapply(more, function(x) x$getElementText())
@@ -60,34 +63,35 @@ remDr$navigate(url)
 
 one<-remDr$findElement(using='css selector','a:nth-of-type(4)')
 one$getElementTagName()
-one$getElementText()
-one$clickElement()
+one$getElementText() 
+one$clickElement() #클릭이벤트 발생
 
 
 url <- "http://unico2013.dothome.co.kr/crawling/exercise_bs.html"
 remDr$navigate(url)
 
 one<-remDr$findElement(using='css selector','a:nth-of-type(3)')
+one
 one$getElementTagName()
 one$getElementText()
-remDr$executeScript("arguments[0].click();",list(one));
+remDr$executeScript("arguments[0].click();",list(one)); #클릭엘레먼트로 포인트가 잡히지 않을 때 사용 
 
 # [ 네이버 웹툰 댓글 읽기 ]
 url<-'http://comic.naver.com/comment/comment.nhn?titleId=570503&no=135'
 remDr$navigate(url)
 
 #단수형으로 노드 추출
-more<-remDr$findElement(using='css','#cbox_module > div > div.u_cbox_sort > div.u_cbox_sort_option > div > ul > li:nth-child(2) > a')
+more<-remDr$findElement(using='css selector','#cbox_module > div > div.u_cbox_sort > div.u_cbox_sort_option > div > ul > li:nth-child(2) > a')
 more$getElementTagName()
 more$getElementText()
 
-more$clickElement()
+more$clickElement() #클릭이벤트가 발생, 전체댓글로 이동하게 됨 
 
 
-# 2페이지부터 10페이지까지 링크 클릭하여 페이지 이동하기 
+# 2페이지부터 10페이지까지 링크 클릭하여 페이지 이동하기 #정적 페이지가 아니기 때문에(page이동x) 직접 이동하는 변수로 이동 후에 페이지 수집, 그 후 다시 페이지 이동 => 반복
 for (i in 4:12) {
   nextCss <- paste0("#cbox_module>div>div.u_cbox_paginate>div> a:nth-child(",i,") > span")
-  nextPage<-remDr$findElement(using='css',nextCss)
+  nextPage<-remDr$findElement(using='css selector',nextCss)
   nextPage$clickElement()
   Sys.sleep(2)
 }
@@ -99,8 +103,8 @@ remDr$navigate(url)
 bestReviewNodes<-remDr$findElements(using ="css selector","ul.u_cbox_list span.u_cbox_contents")
 sapply(bestReviewNodes,function(x){x$getElementText()})
 
-#전체 댓글 링크 클릭후에 첫 페이지 내용 읽어오기
-totalReview <- remDr$findElement(using='css','#cbox_module > div > div.u_cbox_sort > div.u_cbox_sort_option > div > ul > li:nth-child(2) > a')
+#전체 댓글 링크 클릭후에 첫 페이지 내용 읽어오기 #오래걸림 실행 ㄴㄴ
+totalReview <- remDr$findElement(using='css selector','#cbox_module > div > div.u_cbox_sort > div.u_cbox_sort_option > div > ul > li:nth-child(2) > a')
 totalReview$clickElement()
 
 totalReviewNodes<-remDr$findElements(using ="css selector","ul.u_cbox_list span.u_cbox_contents")
@@ -157,15 +161,15 @@ remDr <- remoteDriver(remoteServerAddr = "localhost" , port = 4445, browserName 
 remDr$open()
 url<-'https://www.agoda.com/ko-kr/shilla-stay-yeoksam/hotel/seoul-kr.html?asq=z91SVm7Yvc0eRE%2FTBXmZWCYGcVeTALbG%2FvMXOYFqqcm2JknkW25Du%2BVdjH%2FesXg8ORIaVs1PaEgwePlsVWfwf3sX%2BVNABRcMMOWSvzQ9BxqOPOsvzl8390%2BEhEylPvEiBp0eoREr2xLYHgqmk0Io4J1HYEzEOqyvdox%2BwS6yxHeonB9lh7mJsBIjSBPoMzBLFW01k%2BU8s2bGO6PcSdsu3T30HwabyNzwNYKiv%2BRDxfs%3D&hotel=699258&tick=637215342272&languageId=9&userId=bcb7ecc6-7719-465f-bf29-951e39733c66&sessionId=uouhnqjisace4freagmzbxxc&pageTypeId=7&origin=KR&locale=ko-KR&cid=-1&aid=130243&currencyCode=KRW&htmlLanguage=ko-kr&cultureInfoName=ko-KR&ckuid=bcb7ecc6-7719-465f-bf29-951e39733c66&prid=0&checkIn=2020-05-30&checkOut=2020-05-31&rooms=1&adults=1&childs=0&priceCur=KRW&los=1&textToSearch=%EC%8B%A0%EB%9D%BC%EC%8A%A4%ED%85%8C%EC%9D%B4%20%EC%97%AD%EC%82%BC%20(Shilla%20Stay%20Yeoksam)&productType=-1&travellerType=0&familyMode=off'
 remDr$navigate(url)
-Sys.sleep(3)
+Sys.sleep(3) #네비게이트 하는데 오래 걸릴 수도 있으니 여유를 줘야한다.
 pageLink <- NULL
 reple <- NULL
 curr_PageOldNum <- 0
 repeat{
   doms <- remDr$findElements(using = "css selector", ".Review-comment-bodyText")
-  Sys.sleep(1)
+  Sys.sleep(1) # 오류 방지 필수 구문 
   reple_v <- sapply(doms, function (x) {x$getElementText()})
-  print(reple_v)
+  print(reple_v) #중간중간 확인을 위한 구문 
   reple <- append(reple, unlist(reple_v))
   cat(length(reple), "\n")
   pageLink <- remDr$findElements(using='css',"#reviewSection > div:nth-child(6) > div > span:nth-child(3) > i ")
@@ -184,19 +188,20 @@ cat(length(reple), "개의 댓글 추출\n")
 write(reple,"output/hotel.txt")
 
 
-# [ 네이버 북 페이지 이번주 베스트북정보 크롤링 ]
+# [ 네이버 북 페이지 이번주 베스트북정보 크롤링 ] #베스트 셀러 페이지 자체는 정적이나, 각각의 인터넷서점의 베스트셀러로 가기 위해서는 셀레늄을 사용해야 했다 .
+
 
 site <- "https://book.naver.com/"
 remDr$navigate(site)
 
-#bestseller_tab
+#bestseller_tab 
 
 booksitenodes <- remDr$findElements(using='css selector', '#bestseller_tab > ul.tab_cp_spt > li > a')
 booksites <- sapply(booksitenodes, function(x) {x$getElementAttribute("class")})
 booksites <- unlist(booksites); 
 booksites <- unlist(strsplit(booksites, ' '))
 size <- length(booksites)
-booksites <- booksites[seq(1, size, 2)]
+booksites <- booksites[seq(1, size, 2)] #정적페이지수집과 섞어서 썼으면 안되나? 
 
 for (booksite in booksites) {
   booksitenode <- remDr$findElement(using='css selector', paste0('#tab_cp_spt_',booksite))
