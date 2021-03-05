@@ -11,7 +11,7 @@ url <- paste0(searchUrl, "?query=", query, "&display=100") #100개 받아오기
 doc <- GET(url, add_headers("Content_Type" = "application/xml", #XML형식 요청 
                             "X-Naver-client-Id" = Client_ID, "X-naver-Client-Secret" = Client_Secret))
 
-		
+#OPEN API는  고유의 ID로 신청해오기 때문에 이를 위해서는 GET함수로 주고 받아야 한다. 
 doc2 <- htmlParse(doc, encoding="UTF-8")
 text<- xpathSApply(doc2, "//item/description", xmlValue)
 text
@@ -44,7 +44,7 @@ result$retweet_text
 content <- result$retweet_text
 content <- gsub("[[:lower:][:upper:][:cntrl:]]", "", content)   
 content
-content <- na.omit(content)
+content <- na.omit(content)  ## content <- content[!is.na(content)] 이렇게 하면 더 편함 
 content
 View(content)
 write(content,file = "output/twitter.txt")
@@ -67,7 +67,7 @@ names(i_bus) <- c("노선ID","노선길이","기점", "종점", "배차간격")
 i_bus
 
 #실습4 - 네이버 뉴스 '빅데이터' 검색 
-
+library(jsonlite)
 searchUrl<- "https://openapi.naver.com/v1/search/news.xml"
 Client_ID <- "izGsqP2exeThwwEUVU3x"
 Client_Secret <- "WrwbQ1l6ZI"
