@@ -223,6 +223,7 @@ for (booksite in booksites) {
   write.csv(df, file=paste0('output/book/', booksite, '.csv'))
 }
 
+# [ gs25 이벤트 상품 정보 ]
 site <- 'http://gs25.gsretail.com/gscvs/ko/products/event-goods'
 remDr$navigate(site)
 
@@ -246,7 +247,10 @@ remDr$navigate("http://www.yes24.com/24/goods/40936880")
 
 webElem <- remDr$findElement("css selector", "body")
 remDr$executeScript("scrollTo(0, 0)", args = list(webElem))
+webElem$getElementTagName()
+webElem$getElementText()
 Sys.sleep(1)
+#스크롤을 해야 댓글이 제대로 읽힌다 
 remDr$executeScript("scrollBy(0, 3200)", args = list(webElem))
 Sys.sleep(1)
 remDr$executeScript("scrollBy(0, 3200)", args = list(webElem))
@@ -266,7 +270,7 @@ repeat {
       endFlag <- TRUE
       break
     }
-    remDr$executeScript("arguments[0].click();",fullContentLink);
+    remDr$executeScript("arguments[0].click();",fullContentLink); #긴 댓글을 읽기 위해서는, 더보기를 클릭해야 한다...
     Sys.sleep(1)
     fullContentcss <- paste("#infoset_reviewContentList > div:nth-child(",index,") > div.reviewInfoBot.origin > div.review_cont > p", sep='')
     fullContent<-remDr$findElements(using='css selector', fullContentcss)
@@ -297,7 +301,7 @@ write(repl_v, "output/yes24.txt")
 
 
 
-# [스타벅스 서울 전체 매장 정보 크롤링&스크래핑]
+# [스타벅스 서울 전체 매장 정보 크롤링&스크래핑] + 스크롤 
 
 library(RSelenium)
 
@@ -350,11 +354,11 @@ repeat{
   #병합
   starbucks <- rbind(starbucks ,cbind(shopname, addr, telephone, lat, lng))
   
-  #스크롤 다운
+  #스크롤 다운 #바디 태그가 아닌 특정 태그의 돔객체 안에서 스크롤 실행 #자바 스크립트  
   if(index %% 3 == 0 && index != total)
     remDr$executeScript("var dom=document.querySelectorAll('#mCSB_3_container > ul > li')[arguments[0]]; dom.scrollIntoView();", list(index))
 }
-write.csv(starbucks, "starbucks.csv")
+write.csv(starbucks, "output/starbucks.csv")
 
 
 # 브라우저 화면 스크린샷하기
