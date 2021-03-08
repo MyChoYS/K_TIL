@@ -15,10 +15,10 @@ library(KoNLP)
 useSejongDic()
 R.version
 
-word_data <- readLines("data/애국가(가사).txt")
+word_data <- readLines("data/애국가(가사).txt") #행단위 읽기
 word_data
 
-word_data2 <- sapply(word_data, extractNoun, USE.NAMES = F)
+word_data2 <- sapply(word_data, extractNoun, USE.NAMES = F) #USE.NAMES -> 열이름 #extractnoun -> 명사 
 word_data2
 word_data3 <- extractNoun(word_data)
 word_data3
@@ -33,9 +33,9 @@ word_data3
 undata <- unlist(word_data3)
 undata
 
-word_table <- table(undata)
+word_table <- table(undata) #단어 사용 횟수 확인 
 word_table
-
+#nchar(word_table) 정렬,길이 확인 
 undata2 <- Filter(function(x) {nchar(x) >= 2}, undata)
 word_table2 <- table(undata2)
 word_table2
@@ -118,7 +118,7 @@ twitter_token <- create_token(
   access_secret = access_token_secret)
 
 key <- "취업"
-key <- enc2utf8(key)
+key <- enc2utf8(key) #인코딩
 result <- search_tweets(key, n=100, token = twitter_token)
 
 content <- result$retweet_text
