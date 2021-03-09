@@ -14,4 +14,8 @@ apply() -> 주요api 활용 참고
 
 strsplit()
 
-write() (data_processing)
+write() (data_processing) -> lab12.answer 참고 
+
+str_sub, str_count --> library stringr 
+
+substr()
