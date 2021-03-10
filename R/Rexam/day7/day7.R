@@ -44,7 +44,7 @@ html
 
 # 목록 아이템 추출
 title <- html_text(html_nodes(html, "#apiDataList .title"),trim = T)
-title ##id 추출할땐 #, class는 . 사용
+title # #id 추출할땐 #, class는 . 사용
 
 # 목록 아이템 설명 추출
 desc <- html_text(html_nodes(html, "#apiDataList .ellipsis"))
@@ -60,7 +60,6 @@ desc #중간의 <br>과 점 같은 문자를 삭제
 # 데이터 출력
 api <- data.frame(title, desc) #∙를 삭제하지 않고 데이터프레임화 하면, 특수문자 고유값으로 전환됨
 api
-
 
 # [ 예제3 ]
 # 단일 페이지(rvest 패키지 사용)
