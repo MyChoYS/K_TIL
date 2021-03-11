@@ -7,7 +7,9 @@ products <- read.table("data/product_click.log",header = FALSE)
 products[[2]]
 
 plevel <- factor(products[[2]])
-plevel
+table(plevel)########
+barplot(table(plevel))
+
 plot(plevel, col = terrain.colors(10),family = "maple")
 title(main="세로바 그래프 실습", col.main="red", family = "maple")
 title(xlab="상품ID", col.lab="black",font.main=2, family = "maple")
