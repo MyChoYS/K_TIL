@@ -99,7 +99,7 @@ iris %>% select(contains("etal")) %>% head
 
 # Select columns whose name maches a regular expression
 iris %>% select(matches(".t.")) %>% head #.t.에서 .을 없애도 같음  #contais랑 matches의 차이? 실행결과는 같음
-
+                                                            #match만 정규표현식이 사용가능함 
 iris %>% select(one_of("aa", "Petal.Length", "Petal.Width", "bb")) %>% head
 
 
@@ -158,15 +158,24 @@ exam4 <- exam3 %>% rename(m = math, e = english, s = science)
 
 exam4
 
+iris %>% select(starts_with("p")) %>%  head(iris)
+iris %>% select(matches("[ps]e[tp]")) #p또는 s와 e, t또는 p 가 들어가는 열 선택 
+iris %>% select(starts_with("[ps]e[tp]"))
 
+iris %>% count(Species)
+iris %>% count #행
+exam %>% count(class)
+exam %>% count(id)
+exam %>% count
 
 # 전체 요약하기
 
-exam %>% summarise(n = n())
+exam %>% summarise(n = n()) #summarise를 꼭 group_by랑 쓰지 않아도 된다. 전체에 대해서 하고 싶으면 걍 써도 됨 
 exam %>% tally()
+exam %>% count()
 
 exam %>% summarise(mean_math = mean(math))  # math 평균 산출
-mean(exam$math)
+mean(exam$math) #전체에 대해서 할 때는 굳이 dplyr을 사용할 필요 없기도 함 
 
 
 str(exam %>% summarise(mean_math = mean(math),
@@ -198,7 +207,7 @@ exam %>%
 
 # 각 집단별로 다시 집단 나누기
 mpg %>%
-  group_by(manufacturer, drv) %>%      # 회사별, 구방방식별 분리
+  group_by(manufacturer, drv) %>%      # 회사별, 구동방식별 분리
   summarise(mean_cty = mean(cty)) %>%  # cty 평균 산출
   head(10)                             # 일부 출력
 
