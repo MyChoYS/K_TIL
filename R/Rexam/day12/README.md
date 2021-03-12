@@ -12,3 +12,5 @@ boxplot(Petal.Length ~ Species) -> Y축 ~ X축 의미
 폰트등록 : showtext_auto()
 
 t() 함수를 사용하면 열과 행이 역전된다. 
+
+table() 함수는 중복된 문자들을 factor화 한 후에 갯수까지 정리해서 보여준다!

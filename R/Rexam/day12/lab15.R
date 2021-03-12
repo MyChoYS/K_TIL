@@ -4,7 +4,7 @@ showtext_auto()
 font_add(family = "maple", regular = "fonts/MaplestoryBold.ttf")
 
 products <- read.table("data/product_click.log",header = FALSE)
-products[[2]]
+table(products[[2]]) 
 
 plevel <- factor(products[[2]])
 table(plevel)########

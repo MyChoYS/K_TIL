@@ -1,0 +1,39 @@
+# DAY14
+
+dplyr - 여러 데이터프레임 합치기 (bind_rows, bind_cols)
+
+system.time() -> 구현한 함수, 코드들이 얼만큼의 시간이 걸리는지 확인할 수 있게 해주는 함수 
+
+rbind, bind_rows 둘 모두 row를 기준으로 데이터를 합치지만, 내장함수 rbind보다 dplyr의 함수인 bind_rows의 처리속도가 더 빠르다.
+
+inner_join(x,y,by="기준열") -> 기준열이 같은 애들끼리 붙여라 ->x를 기준으로, 같은 기준열이 없으면 삭제된다... 
+
+left_join(x,y,by="기준열") -> join할 때, x의 데이터프레임을 기준으로 x는 무조건 반영되게끔 
+
+right_join(x,y,by="기준열")-> "" 	"" 	"" 	"" 		"" 		"" 		""	y는 무조건 반영되게끔
+
+full_join(x,y,by="기준열") -> x,y의 모든 데이터가 포함되게끔 데이터를 합친다. 없는값은 NA로
+
+<-> merge (내장함수)
+
+결측치 처리 -> is.na, table(is.na) --> 결측치가 값에 포함되어 있는 경우, 연산이 불가능  따라서 결측치 제거필요 
+
+boxplot은 결측치를 처음부터 제외시키고 산출한다 
+
+ggplot() -> '+'를 통해 함수,효과들을 추가할 수 있다. 
+
+**ggplot2패키지를 활용한 데이터 시각화**
+
+ggplot(,group=)을 통해 그룹별 시각화 가능
+
+library xlsx를 통해 엑셀문서 불러오기 가능 
+
+ggplot에서 aes()옵션은 열단위로 구분할때 쓰인다. 이안에 fill, stat, colour 등을 쓸 수 있다. 
+label을 이용해 막대기 등에 정보를 보일 수 있게 만든다. 
+
+library(plotly)를 이용해서 상호작용 가능한 그래프를 만들 수 있다.
+
+library(treemap)를 이용해서 한눈에 비교가능한 트리맵을 만들 수 있다. 
+
+
+

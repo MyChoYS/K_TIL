@@ -18,3 +18,4 @@ group_by를 통해 그룹별 데이터 산출
 
 summarise() 를 사용해야 마지막 결과를 원하는 통계량에 맞추어 변화시켜 볼 수 있다 .
 (ex.바로 %>% mean 쓰면 오류가 나지만, summarise(mean_1 = mean(1) )) 하면 mean이 나옴)
+
