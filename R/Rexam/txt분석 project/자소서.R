@@ -15,4 +15,14 @@ spec[[1]][3] <- str_split(spec[[1]][3],',') #스펙
 spec[[1]][3] <-length(spec[[1]][[3]]) #스펙 갯수 but, 양은 측정가능하나 질은 측정 불가능하다.
 
 #완성된 첫 스펙
-unlist(spec)
+a <- unlist(spec)
+
+#자소서 긁어오기 
+webElem1 <- remDr$findElements(using = "css selector","#coverLetterContent > main")
+text <- sapply(webElem1, function(x) x$getElementText())
+a<- append(a,gsub("[[:punct:][:cntrl:]]","",text))
+a[1] #학교
+a[2] #학점
+a[3] #스펙 개수 
+a[4]
+View(data.frame(a))
