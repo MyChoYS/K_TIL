@@ -12,15 +12,12 @@ remDr$navigate("http://www.google.com/")
 
 webElem <- remDr$findElement(using = "css selector", "[name = 'q']") #using에 xpath로 설정해도 된다.
 webElem$sendKeysToElement(list("PYTHON", key = "enter")) #프로그램으로 웹 실행
-
-
 remDr$navigate("http://www.naver.com/")
 str(remDr)
 
 webElem <- remDr$findElement(using = "css selector", "#query")
 webElem$sendKeysToElement(list("PYTHON", key = "enter"))
 str(webElem)
-
 
 # 이해를 돕기 위해 간단한 웹페이지를 크롤링하고 스크래핑 함
 url <- "http://unico2013.dothome.co.kr/crawling/tagstyle.html"
@@ -143,6 +140,7 @@ repeat {
     repl_v <- c(repl_v, unlist(repl))                
   }
   
+
   try(nextPage<-remDr$findElement(using='css',
                                   "#cbox_module > div > div.u_cbox_paginate > div > a:nth-child(13) > span.u_cbox_cnt_page"))
   if(length(nextPage) == 0)  break;
