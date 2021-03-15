@@ -1,10 +1,12 @@
 library(dplyr)
 library(ggplot2)
+library(MASS)
+library(treemap)
+library(plotly)
 #문제1
 mpg
 ggplot(mpg,aes(cty, hwy)) + geom_point(color = "blue")
-dev.copy(png,"output/result1.png")
-dev.off()
+ggsave("output/result1.png")
 
 #문제2
 ggplot(mpg,aes(class,fill=drv)) + geom_bar()
@@ -19,10 +21,10 @@ ggplot(products,aes(V2,fill=V2)) + geom_bar()
 dev.copy(png,"output/result3.png")
 dev.off()
 
-#문제4
+#문제4 ##요일 구하기.. 
 products
 products %>% mutate(weekday = weekdays(as.POSIXlt(as.Date(as.character(V1),"%Y%m%d")))) ->products
-ggplot(products,aes(weekday,fill=weekday)) + geom_bar() + labs(x="요일", y="클릭수") +theme_linedraw()
+ggplot(products,aes(weekday,fill=weekday)) + geom_bar() + labs(x="요일", y="클릭수") +theme_light() + coord_cartesian( ylim=c(0, 200))
 
 dev.copy(png,"output/result4.png")
 dev.off()
@@ -31,7 +33,7 @@ dev.off()
 library(showtext)
 showtext_auto() #폰트등록 
 font_add(family = "maple", regular = "fonts/MaplestoryBold.ttf")
-data(GNI2014)
+data(GNI2014) #
 View(GNI2014)
 treemap(GNI2014, vSize="population", index=c("continent","iso3"), 
         title="전세계 인구 정보", fontfamily.title="maple", fontfamily.labels="maple", fontsize.title = 20,border.col="green")

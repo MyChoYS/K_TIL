@@ -427,7 +427,7 @@ ggplot(mpg, aes(x=displ, y=hwy,  color= manufacturer))+
 p1 <- ggplot(data = iris, aes(x = Petal.Width, y= Petal.Length, col=Species)) + geom_point()
 p2 <- ggplot(data = iris, aes(x = Sepal.Width, y= Sepal.Length, col=Species)) + geom_point() 
 install.packages("gridExtra")
-library(gridExtra)
+library(gridExtra) #그래프 여러개 표현 
 grid.arrange(p1, p2, p1, p2, nrow = 2)
 
 
