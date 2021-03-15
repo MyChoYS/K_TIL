@@ -32,7 +32,7 @@ library(XML)
 elem <- remDr$findElement(using="css", value=".st_1")
 elemtxt <- elem$getElementAttribute("outerHTML")
 elem_html <- htmlTreeParse(elemtxt, asText = TRUE, useInternalNodes = T, encoding="UTF-8")
-Sys.setlocale("LC_ALL", "English")
+Sys.setlocale("LC_ALL", "English") # 다시 원상복구 
 games_table <- readHTMLTable(elem_html, header = T, stringsAsFactors = FALSE)[[1]]
 Sys.setlocale()
 Encoding(names(games_table)) <- "UTF-8"
@@ -71,14 +71,14 @@ pie(tbl, main='선실별 탑승객',
 par(mar=c(5.1,4.1,4.1,2.1))
 
 
-# (1) 자료 준비
+# (1) 자료 준비 - p.369 단일변수, 수치형 
 grad <- state.x77[,'HS Grad']   # 주별 고등학교 졸업율
 grad                
 
 # (2) 사분위수
 summary(grad)
-var(grad)                # 분산
-sd(grad)                 # 표준 편차
+var(grad)                # 분산 #값이 얼마나 흩어져 있는지
+sd(grad)                 # 표준 편차 
 
 # (3) 히스토그램
 hist(grad, main='주별 졸업율',
@@ -91,7 +91,7 @@ boxplot(grad, main='주별 졸업율',
         col='orange')
 
 # (5) 졸업율이 가장 낮은 주
-idx <- which(grad==min(grad))
+idx <- which(grad==min(grad)) #dplyr로도 구할 수 있다. 
 grad[idx]
 
 # (6) 졸업율이 가장 높은 주
@@ -106,11 +106,14 @@ grad[idx]
 # (1) 자료 준비
 ds <- read.csv('data/fdeaths.csv', row.names='year')
 ds
+str(ds)
+View(ds)
+colnames(ds)
+t(ds) #해서 ggplot으로 한번 해보자 
 
 #(2) 선그래프 작성
 my.col <- c('black', 'blue','red', 'green','purple','dark gray')
 my.lty <- 1:6
-
 plot(1:12,                       # x data
      ds[1,],                     # y data(1974년 자료)
      main='월별 사망자 추이',    # 그래프 제목
@@ -169,7 +172,12 @@ plot(st)
 # (3) 다중 상관계수
 cor(st)
 
+#추가
+cor(iris$Sepal.Length,iris$Sepal.Width)
+cor(iris$Petal.Length, iris$Petal.Width)
 
+cor(iris[,1:4])
+plot(iris[,1:4])
 
 # 12장
 
@@ -222,7 +230,7 @@ odr <- rank(-month.avg)
 odr
 
 # 월별 기온 분포 
-boxplot(avg_temp~month, data=ds,  
+boxplot(avg_temp~month, data=ds,  #ds의 #avg_temp를 y축, month를 x축 
         col=heat.colors(12)[odr],   # 상자의 색을 지정 
         ylim=c(-20,40), 
         ylab='기온',
@@ -291,7 +299,7 @@ df <- data.frame(month,rain)           # 그래프를 작성할 대상 데이터
 df
 
 ggplot(df, aes(x=month,y=rain)) +      # 그래프를 작성할 데이터 지정
-  geom_bar(stat='identity',            # 막대그래프의 형태 지정  
+  geom_bar(stat='identity',            # 막대그래프의 형태 지정 #기본적으로 카운트인데 y축을 rain으로 하기 위해서는 stat=identity를 해줘야 한다  
            width=0.7,                  # 막대의 폭 지정
            fill='steelblue')           # 막대의 색 지정
 
@@ -314,7 +322,7 @@ ggplot(iris, aes(x=Petal.Length)) +    # 그래프를 그릴 데이터 지정
 library(ggplot2)
 
 ggplot(iris, aes(x=Sepal.Width, fill=Species, color=Species)) +
-  geom_histogram(binwidth = 0.5, position='dodge') +
+  geom_histogram(binwidth = 0.5, position='dodge') + #dodge하면 따로따로 볼 수 있음 
   theme(legend.position='top')
 
 library(ggplot2)
