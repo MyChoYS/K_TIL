@@ -366,6 +366,7 @@ library(HSAUR)
 data("Forbes2000")
 ds <- Forbes2000 
 ds[!complete.cases(ds),]          # 결측값 확인
+View(ds)
 
 str(ds)
 head(ds)
@@ -397,10 +398,18 @@ barplot(top.10.category,
 par(mar=c(5,4,4,2))
 
 # 업종별 기업자산 분포
-tmp <- ds[ds$category %in% names(top.10.category),]
-levels(tmp$category)
+tmp <- ds[ds$category %in% names(top.10.category),] #전체 업종에서 top10업종의 데이터만 선정
+levels(ds$category)
+levels(tmp$category) #걸러서 저장했는데도 levels의 결과가 같은이유 : tmp$category가 팩터타입이기 때문, 팩터는 포함하고 있는 값들과 그룹 정보를 함께 저장하기 때문에 값들이 바뀌어도 그룹정보가 유지된다. 따라서 factor명령어를 통해 재지정해야 한다.
+View(tmp)
+str(tmp$category) #-> 모든정보.. 상위10개 해당 말고도 원래의 데이터, ds에 해당하는 정보를 포함한다. 팩터타입이기 때문. 
 tmp$category <- factor(tmp$category)
-levels(tmp$category)
+levels(tmp$category) #팩터로 true값만(상위업종10에 해당하는 데이터) 가져와서 다시 저장하였기 때문에 의도한대로 데이터가 삽입되었다.
+
+#팩터형의 경우에는 레벨만 보관하는 객체를 따로 관리하고 있으며,
+#팩터형 데이터셋에서 일부만 추출했다 하더라도 레벨 정보는 
+#기존의 데이터셋을 그대로 복사하기 때문
+
 
 par(mar=c(10,4,4,2))               # 그래프 여백 조정
 boxplot(assets~category, data=tmp,
@@ -411,10 +420,10 @@ par(mar=c(5,4,4,2))
 
 
 tmp <- ds[order(ds$marketvalue, decreasing=T),]
-tmp[1:10,c('name', 'country','category','marketvalue')]
+tmp[1:10,c('name', 'country','category','marketvalue')] #시장가치 상위 10개 해당하는 기업,나라,업종,시장가치 추출
 
 
-korea <- subset(ds, country=='South Korea')
+korea <- subset(ds, country=='South Korea') #dplyr을 사용하는게 편할듯 
 korea[,c('rank','name','category','marketvalue')]
 
 

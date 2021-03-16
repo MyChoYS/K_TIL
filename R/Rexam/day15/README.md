@@ -20,4 +20,10 @@ ggplot
 
 aggregate() - 데이터의 특정 컬럼을 기준으로 통계량을 구해주는 함수
 
-방사형 차트 - radarchart 
+방사형 차트 - radarchart()
+
+cor() - 상관계수 확인
+
+ds[!complete.cases(ds),]          # 결측값 확인
+
+factor와 level은 다르다. factor는 level의 정보를 가지고 있는데, 원래의 데이터에서 특정 값에 해당하는 데이터를 추출하더라도 levels를 사용하여 확인하면 같은 levels를 가지고 있다. 이를 없애기 위해서는 팩터형 데이터를 다시 factor()함수를 사용하여 다시 재지정 해야한다.
