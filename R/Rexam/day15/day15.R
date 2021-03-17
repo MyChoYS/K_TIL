@@ -222,7 +222,7 @@ boxplot(ds$avg_temp,
 # (3) 월별 기온 분포 
 # 월별 평균기온 계산 
 month.avg <- aggregate(ds$avg_temp, 
-                       by=list(ds$month),median)[2]
+                       by=list(ds$month),median)[2] #group_by? 
 month.avg
 
 # 평균기온 순위 계산 (내림차순) 
