@@ -22,9 +22,12 @@ t(m2)
 com <- m2 %*% t(m2)
 com
 
-dist(com,method = "cosine") #코사인 거리 = 1-코사인 유사도(코사인유사도가 1에 가까울수록 유사도가 높음) 
-dist(com,method = "Euclidean") #유클리드 거리 (제일 작을 수록) 
+com
 
+ dist(com,method = "cosine") #코사인 거리 = 1-코사인 유사도(코사인유사도가 1에 가까울수록 유사도가 높음) 
+which.min(dist(com,method = "cosine"))
+dist(com,method = "Euclidean") #유클리드 거리 (제일 작을 수록) 
+com[2]
 #가장 많이 선택된 과일 = 포도 -> 5
 most <- sort(rowSums(m), decreasing = T)
 most <-names(many[1])
