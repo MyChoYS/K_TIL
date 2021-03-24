@@ -12,7 +12,7 @@ install.packages("remotes")
 remotes::install_github('haven-jeon/KoNLP', upgrade = "never", INSTALL_opts=c("--no-multiarch"))
 
 library(KoNLP)
-useSejongDic()
+useSejongDic() ##
 R.version
 
 word_data <- readLines("data/애국가(가사).txt") #행단위 읽기

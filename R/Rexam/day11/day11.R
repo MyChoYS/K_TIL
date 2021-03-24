@@ -53,7 +53,11 @@ wordcloud(names(final),final, min.freq = 1)
 wordcloud2(final)
 
 # 트위터 글 워드클라우드
-library(rtweet) 
+library(rtweet)
+install.packages("twitteR")
+library(twitteR)
+?searchTwitter #날짜 설정  가능 
+
 appname <- "edu_data_collection"
 api_key <- "RvnZeIl8ra88reu8fm23m0bST"
 api_secret <- "wTRylK94GK2KmhZUnqXonDaIszwAsS6VPvpSsIo6EX5GQLtzQo"
@@ -69,7 +73,8 @@ twitter_token <- create_token(
 key <- "취업"
 key <- enc2utf8(key) #인코딩
 result <- search_tweets(key, n=100, token = twitter_token)
-
+?search_tweets
+result$created_at
 content <- result$retweet_text
 content <- gsub("[[:lower:][:upper:][:digit:][:punct:][:cntrl:]]", "", content)   
 content <- gsub("취업", "", content)  
