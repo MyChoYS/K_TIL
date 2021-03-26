@@ -871,6 +871,17 @@ GML   ---> SGML    --->  XML - 규격화 시킨 문서를 만들고 싶을 때 �
 
 http://openapi.seoul.go.kr:8088/796143536a756e69313134667752417a/json/LampScpgmtb/1/100/
 
+http://openapi.seoul.go.kr:8088/796143536a756e69313134667752417a/xml/LampScpgmtb/1/100/
+
+
+$('CSS선택자').each(함수)
+$.each(자바스크립트객체, 함수)
+
+
+http://localhost:8000/edu
+
+
+http://localhost:8000/
 
 
 
@@ -883,6 +894,76 @@ http://openapi.seoul.go.kr:8088/796143536a756e69313134667752417a/json/LampScpgmt
 
 
 
+ CRUD - Create Read Update Delete  --> SQL(INSERT, SELECT, UPDATE, DELETE)
+                                                           --> Django API(python)
+
+- Django 가지고 DataBase 를 연동(CRUD)하는 구현 과정
+
+   (1) 모델 클래스를 생성한다. - models.py
+       Model 이라는 클래스를 상속한다.
+       만들려는 DB 테이블의 컬럼 사양에 맞춰서 클래스변수를 정의한다.
+    
+   (2) Django에서 제공하는 명령을 수행시켜서 
+        모델클래스에 알맞는 DB 테이블을 생성한다. 
+
+   (3) 모델클래스를 통해서 CRUD 를 구현한다.
+        
+        C  -  모델클래스의 객체를 생성한 후에 save() 메서드 호출
+        R  -  모델클래스.objects.all()
+                모델클래스.objects.filter(...)
+                모델클래스.objects.order_by(...)
+                모델클래스.objects.first()
+	모델클래스.objects.last()
+	모델클래스.objects.count()
+
+e-ncs.kr 로그인 후에 메인화면 아랫쪽에 시험이 나타남
+이중 [ 필답1 ] 하단에 있는 [ 응시] 버튼을 누르고 평가 진행
+        
+homework2.html  --> 성명.zip 압축해서 수행평가에 첨부 파일로 업로드합니다.
+
+필답시험 모두 끝내고 수행평가 파일을 업로드한 분들은 채팅창을 통해서 강사에게 "완료" 메시지
+보내주세요
+
+RDBMS 에서 테이블 생성시 컬럼단위로 컬럼명과 타입을 설정
+CharField   --> VARCHAR
+
+DELETE FROM thirdapp_emp   --> 쿼리탭
+
+[ 2월 3일 일정 ]
+
+- 9시~12시 : 수업
+- 13시~16시30분 : 팀프로젝
+- 16시30분~17시30분 : 개발계획서 발표
+- 17시30분~17시50분 : 팀프로젝
+
+- 16시까지 강사 메일로 기획안(워드문서), 발표자료(PPT) 전송한다.
+
+
+[ 2월 19일 일정 ]
+
+9시~15시 40분 : 팀 프로젝트
+
+15시 40분까지 : 프로젝트 완료 보고파일(PPT 와 프로젝트 압축소스) --> 강사메일
+
+16시 부터 팀프로젝트 발표 : 팀당 15분~20분
+
+18시까지 ncs 사이트에 프로젝트 포트폴리오(PPT) 개별 제출
+
+2조 -> 3조 -> 5조 -> 6조 -> 4조 -> 1조
+
+
+[ R 구문 학습 내용 ]
+- R로 다룰 수 있는 데이터의 종류 : 자료형(data type)
+- R로 다룰 수 있는 데이터셋의 종류 : 벡터, 행렬(매스릭스), 배열, 데이터프레임, 리스트
+- R에서 사용 가능한 연산자
+- 제어문 : for, while, repeat, if, else if, else, break, next
+- 함수 정의와 활용
+- 파일에 있는 데이터 읽기 : csv, xml, json, xlsx, txt...
+
+
+  파이썬 : True
+  자바스크립트 : true
+  R : TRUE(T)
 
 
 
@@ -890,11 +971,184 @@ http://openapi.seoul.go.kr:8088/796143536a756e69313134667752417a/json/LampScpgmt
 
 
 
+각 나라마다 그 나라 고유의 코드셋이 있다.
+코드셋이란 컴퓨에서 문자를 표현하기 위해 문자마다 부여한 숫자값이다.
+
+0x00~0x7F  - ASCII 코드값이라고 해서 전세계의 표준이다. - 숫자,영문자대소문자,특수기호
+0xB0A1 ~      - 가~힣
+------------------------> KSC5601, EUC-KR, CP949, 메모장(ansi)
+                                                   영문 1바이트, 한글 2바이트
+
+1990년대부터 전세계의 모든 문자들의 코드값을 단일화시키자 하는 노력이 시작된다.
+------------------------> UNICODE - UTF-8
+0xEAB080                                 1바이트~4바이트
+                                                   영문 1바이트, 한글 3바이트
+                                                   
+
+
+
+
+xxx.csv  : read.csv() - data.frame
+xxx.log : read.table() - data.frame
+xxx.txt : scan() - vector, readLines() - vector
+xxx.xml
+xxx.xlsx
+    :
+
+apply(m, 1, 함수)
+apply(m, 2, 함수)
+sapply(), lapply(), tapply(), mapply()
+
+sapply(v, 함수) : 리턴값 - 가급적 단순한 객체
+lapply(v, 함수) : 리턴값 - list 객체
+
+
+[ABCDEFGHIJKLMNOPQRSTUVWXYZ]  --> [A-Z]
+가각갂간...........                                   --> [가-힣]
+0123456789		         --> [0-9]
+010-1234-5678                              --> [0-9]{3}-[0-9]{3,4}-[0-9]{4}
+
+A*B     --> AB, AAB, AAAB, AAAAB, B,..................
+A+B    --> AB, AAB, AAAB, AAAAB........
+A?B     --> AB, B
+
+
+gsub("찾을문자열", "대체문자열", "대상문자열")
+sub("찾을문자열", "대체문자열", "대상문자열")
+
+
+API : Application Programming Interface
+        자주 사용될 수 있는 기능들을 미리 만들어놓은 프로그램
+        어떠한 언어의 API 인가에 따라서 함수, 클래스....
+        R의 경우에는 대부분 함수다.
+        R에서는 여러 함수들을 묶어놓은 것을 패키지라고 하며 패키지 단위로 관리한다.
+        패키지 설치를 통해서 필요한 함수들을 확장하여 사용 가능하다.
+        R의 패키지들은 CRAN 사이트에서 다운로드하여 설치 가능하다.
+        
+
+C:/Users/campusseven05/Documents/R/win-library/4.0
+
+span.title
+
+.title
 
 
 
 
 
+/wikimedia/projects/project/editions/edition[@language="English"]/text()
+
+//editions/edition[@language="English"]/text()
+
+/editions/edition[@language="English"]/text()
+
+
+//*[@id="main-top01-scroll-in"]/div[1]/div/h4/a
+//*[@id="main-top01-scroll-in"]/div[2]/div/h4/a
+//*[@id="main-top01-scroll-in"]/div[3]/div/h4/a
+
+#main-top01-scroll-in > div.article01.first > div > h4 > a
+
+
+//*[@id="old_content"]/table/tbody/tr[1]/td[2]/text()
+//*[@id="old_content"]/table/tbody/tr[2]/td[2]/text()
+//*[@id="old_content"]/table/tbody/tr[3]/td[2]/text()
+
+
+
+#old_content > table > tbody > tr:nth-child(1) > td.title > a.movie.color_b
+
+
+API : Application Programming Interface
+        함수, 클래스, 객체......
+        미리 개발해놓은 프로그램
+
+OPEN API : 무료이고 공개된 데이터들을 정해진 규격의 URL 문자열을 사용해서 요청하고 수집할 수 있는 스펙
+                   
+                   
+https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=ABC123+%EA%B0%80%EB%82%98%EB%8B%A4
+
+
+(1) cmd 다시 기동한다.
+(2) 디렉토리 이동한다.
+(3) dir
+(4) selenium 서버 기동
+
+
+#cbox_module > div > div.u_cbox_paginate > div > a:nth-child(4) > span
+#cbox_module > div > div.u_cbox_paginate > div > a:nth-child(5) > span
+
+#cbox_module > div > div.u_cbox_paginate > div > a:nth-child(12) > span
+
+
+
+#bestseller_list > li:nth-child(5) > dl > dt.thumb > div > a > img
+
+body > div > div > div.container.ng-scope > div.content > div.hotel_used_review.ng-isolate-scope > div.review_ta.ng-scope > ul > li:nth-child(1) > div.review_desc > p
+body > div > div > div.container.ng-scope > div.content > div.hotel_used_review.ng-isolate-scope > div.review_ta.ng-scope > ul > li:nth-child(2) > div.review_desc > p
+
+
+ a <- xxxx
+
+ b <- f1(a)
+ c <- f2(b)
+ d <- f3(c) 
+
+ d <- f3(f2(f1(a)))
+
+ [ dplyr 패키지 방식으로 코딩 ]
+
+ d <- a %>% f1 %>% f2 %>% f3
+ a %>% f1 %>% f2 %>% f3 -> d
+
+[ linux 명령어 ]
+OS - Operating System - 운영체제 : 컴퓨터 HW 가 실제 컴퓨터의 역할을 할 수 있으려면 운영체에라는 
+                                                         시스템 프로그램이 설치되어 있어야 한다. 
+                                                         windows 10, mac os, android os, ios,  linux, unix
+AWS - 클라우드 환경의 시스템
+           linux
+           ls, rm, cd, pwd, grep, find....
+
+           ls |  more
+         (파이프기호)
+
+           명령1 | 명령2 | 명령3 ...
+
+
+v1, v2, v3
+names(df) <- c('v1','vv', 'v3')
+rename(df, vv=v1)
+
+
+
+
+프로토콜명://서버주소(서버도메인명):포트번호/.....................
+http(https)://www.myhome.co.kr:8000/........
+http(https)://www.myhome.co.kr:80/........
+---> 80 포트 번호일 때는 일반적으로 포트 번호를 생략하고 URL 문자열을 사용함. 
+         http(https)://www.myhome.co.kr/........
+
+[ HTTP Response ]
+
+HTTP Header : 응답상태코드, 응답메세지
+               name : value 로 구성되는 여러 정보들
+                    :
+HTTP Body : HTML 전체 내용
+           <html>
+                <head>
+                    :
+                </head>
+                <body>
+                    :
+                </body>
+           </html>
+
+
+
+
+https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+
+https://htmtopdf.herokuapp.com/ipynbviewer/
 
 
 
