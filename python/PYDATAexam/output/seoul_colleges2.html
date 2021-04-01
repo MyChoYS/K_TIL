@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ad297709dbdb4e73a4d5a5d3a08d5fb0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ad297709dbdb4e73a4d5a5d3a08d5fb0" ></div>
+        
+</body>
+<script>    
+    
+            var map_ad297709dbdb4e73a4d5a5d3a08d5fb0 = L.map(
+                "map_ad297709dbdb4e73a4d5a5d3a08d5fb0",
+                {
+                    center: [37.55, 126.98],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fc8d9adecc0b4d17b5e0ca1966f66e51 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+            var circle_marker_758b3e9f17144fcca2a169f120cd62ff = L.circleMarker(
+                [37.592573, 127.046737],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_440e7b8eaaca4be28904b43347f2aa96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4af611f1f2f244d1a5e8762e9a44f4b0 = $(`<div id="html_4af611f1f2f244d1a5e8762e9a44f4b0" style="width: 100.0%; height: 100.0%;">KAIST 서울캠퍼스 </div>`)[0];
+            popup_440e7b8eaaca4be28904b43347f2aa96.setContent(html_4af611f1f2f244d1a5e8762e9a44f4b0);
+        
+
+        circle_marker_758b3e9f17144fcca2a169f120cd62ff.bindPopup(popup_440e7b8eaaca4be28904b43347f2aa96)
+        ;
+
+        
+    
+    
+            var circle_marker_42d79149956f4fe7b46262ba0a55ff72 = L.circleMarker(
+                [37.5483449, 126.8547974],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_cdfdb23bed3c42faa83c454d159d532a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_598453dfbef04dbbac2c818dd85b3735 = $(`<div id="html_598453dfbef04dbbac2c818dd85b3735" style="width: 100.0%; height: 100.0%;">KC대학교</div>`)[0];
+            popup_cdfdb23bed3c42faa83c454d159d532a.setContent(html_598453dfbef04dbbac2c818dd85b3735);
+        
+
+        circle_marker_42d79149956f4fe7b46262ba0a55ff72.bindPopup(popup_cdfdb23bed3c42faa83c454d159d532a)
+        ;
+
+        
+    
+    
+            var circle_marker_556c9b326ef048f8b5cce84f66bcc87f = L.circleMarker(
+                [37.5859218, 127.0043275],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_86eadc1fdb0a449893d8c1dcae8e1c86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c76982de10f4a28be52a66dc09db9ad = $(`<div id="html_5c76982de10f4a28be52a66dc09db9ad" style="width: 100.0%; height: 100.0%;">가톨릭대학교(성신교정)</div>`)[0];
+            popup_86eadc1fdb0a449893d8c1dcae8e1c86.setContent(html_5c76982de10f4a28be52a66dc09db9ad);
+        
+
+        circle_marker_556c9b326ef048f8b5cce84f66bcc87f.bindPopup(popup_86eadc1fdb0a449893d8c1dcae8e1c86)
+        ;
+
+        
+    
+    
+            var circle_marker_0d3b0730812e42bf9132c0bf2f26ccdb = L.circleMarker(
+                [37.4996227, 127.0060653],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_04222b8a13cb4c778cb7ebedfc34f133 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ff8369c33194995b8d8365d8674e9d6 = $(`<div id="html_8ff8369c33194995b8d8365d8674e9d6" style="width: 100.0%; height: 100.0%;">가톨릭대학교(성의교정)</div>`)[0];
+            popup_04222b8a13cb4c778cb7ebedfc34f133.setContent(html_8ff8369c33194995b8d8365d8674e9d6);
+        
+
+        circle_marker_0d3b0730812e42bf9132c0bf2f26ccdb.bindPopup(popup_04222b8a13cb4c778cb7ebedfc34f133)
+        ;
+
+        
+    
+    
+            var circle_marker_fb1ed33a465c4880997be5d4a12b0171 = L.circleMarker(
+                [37.5676455, 126.96161],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_4ca7d8ef7c2a4faf943541678a50de30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6086770c4a6c4121a369eeec83948a5b = $(`<div id="html_6086770c4a6c4121a369eeec83948a5b" style="width: 100.0%; height: 100.0%;">감리교신학대학교</div>`)[0];
+            popup_4ca7d8ef7c2a4faf943541678a50de30.setContent(html_6086770c4a6c4121a369eeec83948a5b);
+        
+
+        circle_marker_fb1ed33a465c4880997be5d4a12b0171.bindPopup(popup_4ca7d8ef7c2a4faf943541678a50de30)
+        ;
+
+        
+    
+    
+            var circle_marker_15ae4f22c16947d9b2373770ec2cc48c = L.circleMarker(
+                [37.5407625, 127.0793428],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_d9f9d5a40adc4e6aa7e1f9d9dcd82e7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2ddc1fed5f145edbc571c26b8a6950a = $(`<div id="html_b2ddc1fed5f145edbc571c26b8a6950a" style="width: 100.0%; height: 100.0%;">건국대학교</div>`)[0];
+            popup_d9f9d5a40adc4e6aa7e1f9d9dcd82e7d.setContent(html_b2ddc1fed5f145edbc571c26b8a6950a);
+        
+
+        circle_marker_15ae4f22c16947d9b2373770ec2cc48c.bindPopup(popup_d9f9d5a40adc4e6aa7e1f9d9dcd82e7d)
+        ;
+
+        
+    
+    
+            var circle_marker_aa9d43bf3848462d95b23949c7b501d9 = L.circleMarker(
+                [37.30048499999999, 127.035833],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_c3069e45fcdd459782f807b5690cd155 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86a8ed2d471148e6bf83904a77086e24 = $(`<div id="html_86a8ed2d471148e6bf83904a77086e24" style="width: 100.0%; height: 100.0%;">경기대학교 서울캠퍼스 </div>`)[0];
+            popup_c3069e45fcdd459782f807b5690cd155.setContent(html_86a8ed2d471148e6bf83904a77086e24);
+        
+
+        circle_marker_aa9d43bf3848462d95b23949c7b501d9.bindPopup(popup_c3069e45fcdd459782f807b5690cd155)
+        ;
+
+        
+    
+    
+            var circle_marker_0d6c228e70ae4c22b992915880479948 = L.circleMarker(
+                [37.5961951, 127.052544],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_1961e54cccc54944b6011dc624315ab0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1f7af498acb40a19f97d71206fe1074 = $(`<div id="html_d1f7af498acb40a19f97d71206fe1074" style="width: 100.0%; height: 100.0%;">경희대학교 서울캠퍼스 </div>`)[0];
+            popup_1961e54cccc54944b6011dc624315ab0.setContent(html_d1f7af498acb40a19f97d71206fe1074);
+        
+
+        circle_marker_0d6c228e70ae4c22b992915880479948.bindPopup(popup_1961e54cccc54944b6011dc624315ab0)
+        ;
+
+        
+    
+    
+            var circle_marker_b29c5621b08e459699c3b1adb70b1e06 = L.circleMarker(
+                [33.8477818, -117.9777482],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_84ebb3be3ac74e9d99b37ea109b5ce91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a1862c25dc44b15989e55077141a62c = $(`<div id="html_8a1862c25dc44b15989e55077141a62c" style="width: 100.0%; height: 100.0%;">고려대학교</div>`)[0];
+            popup_84ebb3be3ac74e9d99b37ea109b5ce91.setContent(html_8a1862c25dc44b15989e55077141a62c);
+        
+
+        circle_marker_b29c5621b08e459699c3b1adb70b1e06.bindPopup(popup_84ebb3be3ac74e9d99b37ea109b5ce91)
+        ;
+
+        
+    
+    
+            var circle_marker_7f2ae54b274644e98c37e22b18ceebb1 = L.circleMarker(
+                [37.6194965, 127.0596958],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_873132f6bb6340729c41d7f3429f5fb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3643841f097a463b98088d45bd2bc88f = $(`<div id="html_3643841f097a463b98088d45bd2bc88f" style="width: 100.0%; height: 100.0%;">광운대학교</div>`)[0];
+            popup_873132f6bb6340729c41d7f3429f5fb4.setContent(html_3643841f097a463b98088d45bd2bc88f);
+        
+
+        circle_marker_7f2ae54b274644e98c37e22b18ceebb1.bindPopup(popup_873132f6bb6340729c41d7f3429f5fb4)
+        ;
+
+        
+    
+    
+            var circle_marker_5e60114dc44f42589cb5f6a949972f77 = L.circleMarker(
+                [37.6096409, 126.997697],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_59d66c142e0845f2b45456bfe9ae651f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e35863ca6df44d2a83660ac29b925cea = $(`<div id="html_e35863ca6df44d2a83660ac29b925cea" style="width: 100.0%; height: 100.0%;">국민대학교</div>`)[0];
+            popup_59d66c142e0845f2b45456bfe9ae651f.setContent(html_e35863ca6df44d2a83660ac29b925cea);
+        
+
+        circle_marker_5e60114dc44f42589cb5f6a949972f77.bindPopup(popup_59d66c142e0845f2b45456bfe9ae651f)
+        ;
+
+        
+    
+    
+            var circle_marker_67fcb6bf8cf84b20841f097268820536 = L.circleMarker(
+                [37.6511988, 127.0161604],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_ee27ecda2bff4a9b8988c1c59952bbbc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fa89b5c857849a8b979bebb97e85d5b = $(`<div id="html_6fa89b5c857849a8b979bebb97e85d5b" style="width: 100.0%; height: 100.0%;">덕성여자대학교</div>`)[0];
+            popup_ee27ecda2bff4a9b8988c1c59952bbbc.setContent(html_6fa89b5c857849a8b979bebb97e85d5b);
+        
+
+        circle_marker_67fcb6bf8cf84b20841f097268820536.bindPopup(popup_ee27ecda2bff4a9b8988c1c59952bbbc)
+        ;
+
+        
+    
+    
+            var circle_marker_afaa567ce2424b65a6a5522cc3dcb9dd = L.circleMarker(
+                [37.5574771, 127.0020518],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_74b531aa7bf14dfd904d597362a1a362 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46622731747b48fd85e7089826876c3a = $(`<div id="html_46622731747b48fd85e7089826876c3a" style="width: 100.0%; height: 100.0%;">동국대학교</div>`)[0];
+            popup_74b531aa7bf14dfd904d597362a1a362.setContent(html_46622731747b48fd85e7089826876c3a);
+        
+
+        circle_marker_afaa567ce2424b65a6a5522cc3dcb9dd.bindPopup(popup_74b531aa7bf14dfd904d597362a1a362)
+        ;
+
+        
+    
+    
+            var circle_marker_aa3ee94ff7f147e7bde232bf044a95cf = L.circleMarker(
+                [37.6063202, 127.041808],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_5ba9e02228f34d7da71ac29cc950e78f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3fa48b454524a43b701d0edd64e2232 = $(`<div id="html_d3fa48b454524a43b701d0edd64e2232" style="width: 100.0%; height: 100.0%;">동덕여자대학교</div>`)[0];
+            popup_5ba9e02228f34d7da71ac29cc950e78f.setContent(html_d3fa48b454524a43b701d0edd64e2232);
+        
+
+        circle_marker_aa3ee94ff7f147e7bde232bf044a95cf.bindPopup(popup_5ba9e02228f34d7da71ac29cc950e78f)
+        ;
+
+        
+    
+    
+            var circle_marker_3930264f3c9641199489c2953efa309a = L.circleMarker(
+                [37.5802046, 126.9234451],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_c1af437e66134fc1b59fe9d2d1dae226 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58d996d4fd9d4a70b3d43d8033a3965c = $(`<div id="html_58d996d4fd9d4a70b3d43d8033a3965c" style="width: 100.0%; height: 100.0%;">명지대학교 서울캠퍼스 </div>`)[0];
+            popup_c1af437e66134fc1b59fe9d2d1dae226.setContent(html_58d996d4fd9d4a70b3d43d8033a3965c);
+        
+
+        circle_marker_3930264f3c9641199489c2953efa309a.bindPopup(popup_c1af437e66134fc1b59fe9d2d1dae226)
+        ;
+
+        
+    
+    
+            var circle_marker_148223e60226409bbd1baf5973e2af17 = L.circleMarker(
+                [37.6429515, 127.1054757],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_f46ca60b91904b659886650545b02854 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d3fc0e564cf430cb50892192718f6ee = $(`<div id="html_0d3fc0e564cf430cb50892192718f6ee" style="width: 100.0%; height: 100.0%;">삼육대학교</div>`)[0];
+            popup_f46ca60b91904b659886650545b02854.setContent(html_0d3fc0e564cf430cb50892192718f6ee);
+        
+
+        circle_marker_148223e60226409bbd1baf5973e2af17.bindPopup(popup_f46ca60b91904b659886650545b02854)
+        ;
+
+        
+    
+    
+            var circle_marker_50ff69e7a55f4941baf3a3d68bad6d81 = L.circleMarker(
+                [37.602638, 126.955252],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_a8e01be88690425e86ab2bcb779fd898 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c8bd7b81b694cfeaae14f806703e8bc = $(`<div id="html_8c8bd7b81b694cfeaae14f806703e8bc" style="width: 100.0%; height: 100.0%;">상명대학교 서울캠퍼스 </div>`)[0];
+            popup_a8e01be88690425e86ab2bcb779fd898.setContent(html_8c8bd7b81b694cfeaae14f806703e8bc);
+        
+
+        circle_marker_50ff69e7a55f4941baf3a3d68bad6d81.bindPopup(popup_a8e01be88690425e86ab2bcb779fd898)
+        ;
+
+        
+    
+    
+            var circle_marker_8e4074097f0549eeb5c853999ef84f89 = L.circleMarker(
+                [37.5509442, 126.9410023],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_c02c6b3fbeb64705bfbb5c0cb783fb5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eedec47fa0b746fca3b50004d685a554 = $(`<div id="html_eedec47fa0b746fca3b50004d685a554" style="width: 100.0%; height: 100.0%;">서강대학교</div>`)[0];
+            popup_c02c6b3fbeb64705bfbb5c0cb783fb5c.setContent(html_eedec47fa0b746fca3b50004d685a554);
+        
+
+        circle_marker_8e4074097f0549eeb5c853999ef84f89.bindPopup(popup_c02c6b3fbeb64705bfbb5c0cb783fb5c)
+        ;
+
+        
+    
+    
+            var circle_marker_14b36e19bc684ae18e2c637403bca79b = L.circleMarker(
+                [37.615095, 127.0131113],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_fceb93b5b7a349bcb2aaadb34a9c745b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_610f7e7215854c30bf7a3dac22927a4c = $(`<div id="html_610f7e7215854c30bf7a3dac22927a4c" style="width: 100.0%; height: 100.0%;">서경대학교</div>`)[0];
+            popup_fceb93b5b7a349bcb2aaadb34a9c745b.setContent(html_610f7e7215854c30bf7a3dac22927a4c);
+        
+
+        circle_marker_14b36e19bc684ae18e2c637403bca79b.bindPopup(popup_fceb93b5b7a349bcb2aaadb34a9c745b)
+        ;
+
+        
+    
+    
+            var circle_marker_970efc7e081d499f8608ee4c812bd1cc = L.circleMarker(
+                [37.6316684, 127.0774813],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_6baf31d370e54a10bce097fce1e51ab2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a3f7b8299c34f2d8d7a6b12c26d8a9b = $(`<div id="html_5a3f7b8299c34f2d8d7a6b12c26d8a9b" style="width: 100.0%; height: 100.0%;">서울과학기술대학교</div>`)[0];
+            popup_6baf31d370e54a10bce097fce1e51ab2.setContent(html_5a3f7b8299c34f2d8d7a6b12c26d8a9b);
+        
+
+        circle_marker_970efc7e081d499f8608ee4c812bd1cc.bindPopup(popup_6baf31d370e54a10bce097fce1e51ab2)
+        ;
+
+        
+    
+    
+            var circle_marker_1e766091cf42429b9cab9859e02c77fa = L.circleMarker(
+                [37.4899615, 127.0164124],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_daa5ebfc21774a10818bc0b8b8eeb93f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e2df2973b444da6976d228e7c3407f7 = $(`<div id="html_8e2df2973b444da6976d228e7c3407f7" style="width: 100.0%; height: 100.0%;">서울교육대학교</div>`)[0];
+            popup_daa5ebfc21774a10818bc0b8b8eeb93f.setContent(html_8e2df2973b444da6976d228e7c3407f7);
+        
+
+        circle_marker_1e766091cf42429b9cab9859e02c77fa.bindPopup(popup_daa5ebfc21774a10818bc0b8b8eeb93f)
+        ;
+
+        
+    
+    
+            var circle_marker_9d3dbbca2ed34dc5b7515803d7c3b96f = L.circleMarker(
+                [37.6009228, 126.9123818],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_8a9d28d7c5424b868fba0c00c8d8eeb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b54811a15cd94dbf8a7db5f9bdb8182e = $(`<div id="html_b54811a15cd94dbf8a7db5f9bdb8182e" style="width: 100.0%; height: 100.0%;">서울기독대학교</div>`)[0];
+            popup_8a9d28d7c5424b868fba0c00c8d8eeb6.setContent(html_b54811a15cd94dbf8a7db5f9bdb8182e);
+        
+
+        circle_marker_9d3dbbca2ed34dc5b7515803d7c3b96f.bindPopup(popup_8a9d28d7c5424b868fba0c00c8d8eeb6)
+        ;
+
+        
+    
+    
+            var circle_marker_93696a5e2be74e6fa1c77ea4e0e4da16 = L.circleMarker(
+                [37.459882, 126.9519053],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_f2513b09198b4eea9dbd1c7349cdff4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3531d187a8a5446da71d79537934962b = $(`<div id="html_3531d187a8a5446da71d79537934962b" style="width: 100.0%; height: 100.0%;">서울대학교</div>`)[0];
+            popup_f2513b09198b4eea9dbd1c7349cdff4d.setContent(html_3531d187a8a5446da71d79537934962b);
+        
+
+        circle_marker_93696a5e2be74e6fa1c77ea4e0e4da16.bindPopup(popup_f2513b09198b4eea9dbd1c7349cdff4d)
+        ;
+
+        
+    
+    
+            var circle_marker_fa1aa23f5176482c85abf53ffcedaff6 = L.circleMarker(
+                [37.5838657, 127.0587771],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_4370427c029d48b3b96ad15671c3d978 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce659e087ce544baa8d6d91f9c347807 = $(`<div id="html_ce659e087ce544baa8d6d91f9c347807" style="width: 100.0%; height: 100.0%;">서울시립대학교</div>`)[0];
+            popup_4370427c029d48b3b96ad15671c3d978.setContent(html_ce659e087ce544baa8d6d91f9c347807);
+        
+
+        circle_marker_fa1aa23f5176482c85abf53ffcedaff6.bindPopup(popup_4370427c029d48b3b96ad15671c3d978)
+        ;
+
+        
+    
+    
+            var circle_marker_b78eb6631a4e40f98f912fbcaa5f0ffe = L.circleMarker(
+                [37.6281126, 127.0904568],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_5b82a55826c14e27aeaf92082fc08b67 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca77b06f3ab541c6b1f1dcf1d77c0928 = $(`<div id="html_ca77b06f3ab541c6b1f1dcf1d77c0928" style="width: 100.0%; height: 100.0%;">서울여자대학교</div>`)[0];
+            popup_5b82a55826c14e27aeaf92082fc08b67.setContent(html_ca77b06f3ab541c6b1f1dcf1d77c0928);
+        
+
+        circle_marker_b78eb6631a4e40f98f912fbcaa5f0ffe.bindPopup(popup_5b82a55826c14e27aeaf92082fc08b67)
+        ;
+
+        
+    
+    
+            var circle_marker_39a0a55f685a49b99e4396471c614cb0 = L.circleMarker(
+                [37.4965411, 126.8512616],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_7faa642fd94d436e9c8d757c4ba73a4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc959714af484aa687293b346e1b60e2 = $(`<div id="html_bc959714af484aa687293b346e1b60e2" style="width: 100.0%; height: 100.0%;">서울한영대학교</div>`)[0];
+            popup_7faa642fd94d436e9c8d757c4ba73a4e.setContent(html_bc959714af484aa687293b346e1b60e2);
+        
+
+        circle_marker_39a0a55f685a49b99e4396471c614cb0.bindPopup(popup_7faa642fd94d436e9c8d757c4ba73a4e)
+        ;
+
+        
+    
+    
+            var circle_marker_aa43871eac2f497c8c3087c3d25d3054 = L.circleMarker(
+                [37.4872325, 126.8253202],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_2635cbadc78c49edbf2a9b4938143d81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_814dec43d837499e821c469b56ef726c = $(`<div id="html_814dec43d837499e821c469b56ef726c" style="width: 100.0%; height: 100.0%;">성공회대학교</div>`)[0];
+            popup_2635cbadc78c49edbf2a9b4938143d81.setContent(html_814dec43d837499e821c469b56ef726c);
+        
+
+        circle_marker_aa43871eac2f497c8c3087c3d25d3054.bindPopup(popup_2635cbadc78c49edbf2a9b4938143d81)
+        ;
+
+        
+    
+    
+            var circle_marker_e1676c2f95224cddb059f783dbcfac4a = L.circleMarker(
+                [37.588227, 126.993606],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_14c7131d144a4e3290dc2d93ba521815 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6440cf66a4a44ee0a2af54d0561cab97 = $(`<div id="html_6440cf66a4a44ee0a2af54d0561cab97" style="width: 100.0%; height: 100.0%;">성균관대학교 서울캠퍼스  </div>`)[0];
+            popup_14c7131d144a4e3290dc2d93ba521815.setContent(html_6440cf66a4a44ee0a2af54d0561cab97);
+        
+
+        circle_marker_e1676c2f95224cddb059f783dbcfac4a.bindPopup(popup_14c7131d144a4e3290dc2d93ba521815)
+        ;
+
+        
+    
+    
+            var circle_marker_48383e10d84948309e8878ee1f1e304e = L.circleMarker(
+                [37.5913103, 127.0221312],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_f1ad274c6b894af2bcc73cd59178dcd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15ec24fc5b0b43788a8b53757c3c808c = $(`<div id="html_15ec24fc5b0b43788a8b53757c3c808c" style="width: 100.0%; height: 100.0%;">성신여자대학교</div>`)[0];
+            popup_f1ad274c6b894af2bcc73cd59178dcd2.setContent(html_15ec24fc5b0b43788a8b53757c3c808c);
+        
+
+        circle_marker_48383e10d84948309e8878ee1f1e304e.bindPopup(popup_f1ad274c6b894af2bcc73cd59178dcd2)
+        ;
+
+        
+    
+    
+            var circle_marker_3401dc0cc9b44964bc8fbd297bd10dc4 = L.circleMarker(
+                [37.5502596, 127.073139],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_81d24da5542240c4b4e3006a1e298520 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51f4c1275f364d12acc1f3a6e65856bb = $(`<div id="html_51f4c1275f364d12acc1f3a6e65856bb" style="width: 100.0%; height: 100.0%;">세종대학교</div>`)[0];
+            popup_81d24da5542240c4b4e3006a1e298520.setContent(html_51f4c1275f364d12acc1f3a6e65856bb);
+        
+
+        circle_marker_3401dc0cc9b44964bc8fbd297bd10dc4.bindPopup(popup_81d24da5542240c4b4e3006a1e298520)
+        ;
+
+        
+    
+    
+            var circle_marker_90584dc7efc942e4aa35a8732e8a0b29 = L.circleMarker(
+                [37.5463644, 126.9648311],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_90e26b7a811d416c85d4a63a06ad767d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbae9b3e804c4ff0afddaea63e967347 = $(`<div id="html_cbae9b3e804c4ff0afddaea63e967347" style="width: 100.0%; height: 100.0%;">숙명여자대학교</div>`)[0];
+            popup_90e26b7a811d416c85d4a63a06ad767d.setContent(html_cbae9b3e804c4ff0afddaea63e967347);
+        
+
+        circle_marker_90584dc7efc942e4aa35a8732e8a0b29.bindPopup(popup_90e26b7a811d416c85d4a63a06ad767d)
+        ;
+
+        
+    
+    
+            var circle_marker_b682602a6fa143ae9af7d1bdf9396739 = L.circleMarker(
+                [37.4963111, 126.9574596],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_d7fe6753f1874b1493838333ec7fd536 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f65ad4de01a479e9372a1ecafe2c0e3 = $(`<div id="html_3f65ad4de01a479e9372a1ecafe2c0e3" style="width: 100.0%; height: 100.0%;">숭실대학교</div>`)[0];
+            popup_d7fe6753f1874b1493838333ec7fd536.setContent(html_3f65ad4de01a479e9372a1ecafe2c0e3);
+        
+
+        circle_marker_b682602a6fa143ae9af7d1bdf9396739.bindPopup(popup_d7fe6753f1874b1493838333ec7fd536)
+        ;
+
+        
+    
+    
+            var circle_marker_6a315aa3cd7f413e9dbe4839bb0eafca = L.circleMarker(
+                [37.565784, 126.938572],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_f1f82f5dc012450680b91da2ec4a958a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01ba4201488b49fd81462514fa567b56 = $(`<div id="html_01ba4201488b49fd81462514fa567b56" style="width: 100.0%; height: 100.0%;">연세대학교</div>`)[0];
+            popup_f1f82f5dc012450680b91da2ec4a958a.setContent(html_01ba4201488b49fd81462514fa567b56);
+        
+
+        circle_marker_6a315aa3cd7f413e9dbe4839bb0eafca.bindPopup(popup_f1f82f5dc012450680b91da2ec4a958a)
+        ;
+
+        
+    
+    
+            var circle_marker_707a1f0a3e394a069996b633a25af78d = L.circleMarker(
+                [37.6238188, 127.0988783],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_d3744103b3ad4733a8f3a72c5dd432f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70b9aa2d9dc24fc4987a486f83e7f48d = $(`<div id="html_70b9aa2d9dc24fc4987a486f83e7f48d" style="width: 100.0%; height: 100.0%;">육군사관학교</div>`)[0];
+            popup_d3744103b3ad4733a8f3a72c5dd432f5.setContent(html_70b9aa2d9dc24fc4987a486f83e7f48d);
+        
+
+        circle_marker_707a1f0a3e394a069996b633a25af78d.bindPopup(popup_d3744103b3ad4733a8f3a72c5dd432f5)
+        ;
+
+        
+    
+    
+            var circle_marker_d65d19a379844b30b7ce475721fbe360 = L.circleMarker(
+                [37.5643079, 126.9501786],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_c34509e076c6459fb832b297bc2bf422 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4898dc322af548028f59eed6bcfb439f = $(`<div id="html_4898dc322af548028f59eed6bcfb439f" style="width: 100.0%; height: 100.0%;">이화여자대학교</div>`)[0];
+            popup_c34509e076c6459fb832b297bc2bf422.setContent(html_4898dc322af548028f59eed6bcfb439f);
+        
+
+        circle_marker_d65d19a379844b30b7ce475721fbe360.bindPopup(popup_c34509e076c6459fb832b297bc2bf422)
+        ;
+
+        
+    
+    
+            var circle_marker_7ebe551ac8c14946b044b67a2fc2a0d2 = L.circleMarker(
+                [37.5505112, 127.1034577],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_1e96b31746db42b7bc0a380f70d1e401 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1dd7d557ca49488ab4fd30fb7f9e1ee8 = $(`<div id="html_1dd7d557ca49488ab4fd30fb7f9e1ee8" style="width: 100.0%; height: 100.0%;">장로회신학대학교</div>`)[0];
+            popup_1e96b31746db42b7bc0a380f70d1e401.setContent(html_1dd7d557ca49488ab4fd30fb7f9e1ee8);
+        
+
+        circle_marker_7ebe551ac8c14946b044b67a2fc2a0d2.bindPopup(popup_1e96b31746db42b7bc0a380f70d1e401)
+        ;
+
+        
+    
+    
+            var circle_marker_916105966f9f4e4698b7ff3c1a43c8d2 = L.circleMarker(
+                [37.5050881, 126.9571012],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_21163886d3244321bc3e775dee77ce98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00d9a54a782e46eaa99309aed3016dad = $(`<div id="html_00d9a54a782e46eaa99309aed3016dad" style="width: 100.0%; height: 100.0%;">중앙대학교 서울캠퍼스 </div>`)[0];
+            popup_21163886d3244321bc3e775dee77ce98.setContent(html_00d9a54a782e46eaa99309aed3016dad);
+        
+
+        circle_marker_916105966f9f4e4698b7ff3c1a43c8d2.bindPopup(popup_21163886d3244321bc3e775dee77ce98)
+        ;
+
+        
+    
+    
+            var circle_marker_2cd669537d6846e5a8822e6436c87678 = L.circleMarker(
+                [37.4886232, 126.9668169],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_7f27a2221917492a96c3dd546010b705 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7775d5e1bd9747ddbf93214c52f8bb93 = $(`<div id="html_7775d5e1bd9747ddbf93214c52f8bb93" style="width: 100.0%; height: 100.0%;">총신대학교</div>`)[0];
+            popup_7f27a2221917492a96c3dd546010b705.setContent(html_7775d5e1bd9747ddbf93214c52f8bb93);
+        
+
+        circle_marker_2cd669537d6846e5a8822e6436c87678.bindPopup(popup_7f27a2221917492a96c3dd546010b705)
+        ;
+
+        
+    
+    
+            var circle_marker_1816b3e3376b41b2ab89b6639e0f7a16 = L.circleMarker(
+                [37.5624515, 126.9534165],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_0a572db880374b41a9e1961fa4be3a1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5b87d3a95b942e1b9f92a6f3e88a46a = $(`<div id="html_f5b87d3a95b942e1b9f92a6f3e88a46a" style="width: 100.0%; height: 100.0%;">추계예술대학교</div>`)[0];
+            popup_0a572db880374b41a9e1961fa4be3a1c.setContent(html_f5b87d3a95b942e1b9f92a6f3e88a46a);
+        
+
+        circle_marker_1816b3e3376b41b2ab89b6639e0f7a16.bindPopup(popup_0a572db880374b41a9e1961fa4be3a1c)
+        ;
+
+        
+    
+    
+            var circle_marker_951469dfdf924f84b8fe0076ff40349c = L.circleMarker(
+                [37.5786127, 127.0032905],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_76fed0c3e06e46df849721e2c173e31f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2200eed46bf473ca0ef3e3d9cd7fb1e = $(`<div id="html_c2200eed46bf473ca0ef3e3d9cd7fb1e" style="width: 100.0%; height: 100.0%;">한국방송통신대학교</div>`)[0];
+            popup_76fed0c3e06e46df849721e2c173e31f.setContent(html_c2200eed46bf473ca0ef3e3d9cd7fb1e);
+        
+
+        circle_marker_951469dfdf924f84b8fe0076ff40349c.bindPopup(popup_76fed0c3e06e46df849721e2c173e31f)
+        ;
+
+        
+    
+    
+            var circle_marker_ec76fdb8aa9d4d8c95692a1bff007c12 = L.circleMarker(
+                [37.6487485, 127.0643199],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_f2aa1c7d6c7848c49b167454c225f182 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab9ad652254047b29a22db124da7cd37 = $(`<div id="html_ab9ad652254047b29a22db124da7cd37" style="width: 100.0%; height: 100.0%;">한국성서대학교</div>`)[0];
+            popup_f2aa1c7d6c7848c49b167454c225f182.setContent(html_ab9ad652254047b29a22db124da7cd37);
+        
+
+        circle_marker_ec76fdb8aa9d4d8c95692a1bff007c12.bindPopup(popup_f2aa1c7d6c7848c49b167454c225f182)
+        ;
+
+        
+    
+    
+            var circle_marker_71e64874dc0d4b03ab65dd8235bb0428 = L.circleMarker(
+                [37.6049973, 127.0567397],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_0b1cd7b6e41941d2b4532b5ff98729a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6084867d5ff48848992db5bff43df23 = $(`<div id="html_b6084867d5ff48848992db5bff43df23" style="width: 100.0%; height: 100.0%;">한국예술종합학교</div>`)[0];
+            popup_0b1cd7b6e41941d2b4532b5ff98729a7.setContent(html_b6084867d5ff48848992db5bff43df23);
+        
+
+        circle_marker_71e64874dc0d4b03ab65dd8235bb0428.bindPopup(popup_0b1cd7b6e41941d2b4532b5ff98729a7)
+        ;
+
+        
+    
+    
+            var circle_marker_dd4a851484164e08a93ec06cfc6ca753 = L.circleMarker(
+                [37.597319, 127.057843],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_b6d6c3719d0c4b11a8a9342aa9e26c27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f927f61fab684ba5ae29ce4b022f7ec9 = $(`<div id="html_f927f61fab684ba5ae29ce4b022f7ec9" style="width: 100.0%; height: 100.0%;">한국외국어대학교</div>`)[0];
+            popup_b6d6c3719d0c4b11a8a9342aa9e26c27.setContent(html_f927f61fab684ba5ae29ce4b022f7ec9);
+        
+
+        circle_marker_dd4a851484164e08a93ec06cfc6ca753.bindPopup(popup_b6d6c3719d0c4b11a8a9342aa9e26c27)
+        ;
+
+        
+    
+    
+            var circle_marker_429b4486989c42c290f3d22379b6c877 = L.circleMarker(
+                [37.5196266, 127.1309837],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_86818508429347e18260af4682e948a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ebca5c04e4744b38bb42af04e2f3082 = $(`<div id="html_9ebca5c04e4744b38bb42af04e2f3082" style="width: 100.0%; height: 100.0%;">한국체육대학교</div>`)[0];
+            popup_86818508429347e18260af4682e948a5.setContent(html_9ebca5c04e4744b38bb42af04e2f3082);
+        
+
+        circle_marker_429b4486989c42c290f3d22379b6c877.bindPopup(popup_86818508429347e18260af4682e948a5)
+        ;
+
+        
+    
+    
+            var circle_marker_d96ff36bd1824943bea895f09b282b32 = L.circleMarker(
+                [37.5817849, 127.010369],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_5b8b1880afb94742ba05612966b22f63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28235e3f4ae3406abd8b8a03b7d2a66a = $(`<div id="html_28235e3f4ae3406abd8b8a03b7d2a66a" style="width: 100.0%; height: 100.0%;">한성대학교</div>`)[0];
+            popup_5b8b1880afb94742ba05612966b22f63.setContent(html_28235e3f4ae3406abd8b8a03b7d2a66a);
+        
+
+        circle_marker_d96ff36bd1824943bea895f09b282b32.bindPopup(popup_5b8b1880afb94742ba05612966b22f63)
+        ;
+
+        
+    
+    
+            var circle_marker_6d51458fbbfc4d9a80fc6a7c3c81fb3b = L.circleMarker(
+                [37.5572321, 127.0453219],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_f0a29cc81b2748a69ea020aa6557b922 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a3342ed5289436d8e23c0ad0bdfe233 = $(`<div id="html_6a3342ed5289436d8e23c0ad0bdfe233" style="width: 100.0%; height: 100.0%;">한양대학교</div>`)[0];
+            popup_f0a29cc81b2748a69ea020aa6557b922.setContent(html_6a3342ed5289436d8e23c0ad0bdfe233);
+        
+
+        circle_marker_6d51458fbbfc4d9a80fc6a7c3c81fb3b.bindPopup(popup_f0a29cc81b2748a69ea020aa6557b922)
+        ;
+
+        
+    
+    
+            var circle_marker_446ac395e8654ad3af53bfd939d87102 = L.circleMarker(
+                [37.5514642, 126.9250106],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ad297709dbdb4e73a4d5a5d3a08d5fb0);
+        
+    
+        var popup_ba8563f3612b4e15b5d1f14acc9b9f07 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7965df431d34169bd4a17372ff8e4b0 = $(`<div id="html_b7965df431d34169bd4a17372ff8e4b0" style="width: 100.0%; height: 100.0%;">홍익대학교</div>`)[0];
+            popup_ba8563f3612b4e15b5d1f14acc9b9f07.setContent(html_b7965df431d34169bd4a17372ff8e4b0);
+        
+
+        circle_marker_446ac395e8654ad3af53bfd939d87102.bindPopup(popup_ba8563f3612b4e15b5d1f14acc9b9f07)
+        ;
+
+        
+    
+</script>
