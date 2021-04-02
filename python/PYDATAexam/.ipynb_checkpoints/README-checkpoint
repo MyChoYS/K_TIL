@@ -13,3 +13,8 @@ bs.find_all() 을 사용하여 여러 값에 해당하는 객체를 리턴할 �
 bs.find() -> 한 개만 찾는 것 find_all에 limit=1을 준 것이라 똑같음 
 
 bs.ul.li.string과 bs.ul.li.text에는 차이가 있다. 
+
+exam5 -> googlemap
+exam7 - folium
+표준화 : 이상치 제거 -> 다만 이상치가 중요한 의미를 가지고 있는 경우가 있으므로 신중해야한다.
+정규화 : 수치 크기 다를 시 차이 제거 

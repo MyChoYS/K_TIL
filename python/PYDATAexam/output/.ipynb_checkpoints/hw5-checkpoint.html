@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_266b6cee25804e5ab893cb2cd21e178e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_266b6cee25804e5ab893cb2cd21e178e" ></div>
+        
+</body>
+<script>    
+    
+            var map_266b6cee25804e5ab893cb2cd21e178e = L.map(
+                "map_266b6cee25804e5ab893cb2cd21e178e",
+                {
+                    center: [37.557, 126.8025],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cc4f8808686047568613ad7e614e5a9f = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_266b6cee25804e5ab893cb2cd21e178e);
+        
+    
+            var marker_ffabf621cc65404c80316872faa7e846 = L.marker(
+                [37.5571, 126.8025],
+                {}
+            ).addTo(map_266b6cee25804e5ab893cb2cd21e178e);
+        
+    
+            var icon_486f1d07db204234999f7ef6bab4d792 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bookmark", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ffabf621cc65404c80316872faa7e846.setIcon(icon_486f1d07db204234999f7ef6bab4d792);
+        
+    
+        var popup_d4b7161cf72e47f79dca0e159a5401af = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_a832de2ba25a4d569d35e4ade2743025 = $(`<div id="html_a832de2ba25a4d569d35e4ade2743025" style="width: 100.0%; height: 100.0%;"><h3>김포공항</h3> <hr> <h4>김포공항2 </h4></div>`)[0];
+            popup_d4b7161cf72e47f79dca0e159a5401af.setContent(html_a832de2ba25a4d569d35e4ade2743025);
+        
+
+        marker_ffabf621cc65404c80316872faa7e846.bindPopup(popup_d4b7161cf72e47f79dca0e159a5401af)
+        ;
+
+        
+    
+    
+            marker_ffabf621cc65404c80316872faa7e846.bindTooltip(
+                `<div>
+                     click!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
