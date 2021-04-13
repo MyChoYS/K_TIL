@@ -1,0 +1,1 @@
+HEIDISQL을 이용한, AWS연동 SQL 
