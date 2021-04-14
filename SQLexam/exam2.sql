@@ -318,7 +318,7 @@ LIMIT 7;
 SELECT *
 FROM edu09db.emp
 ORDER BY sal DESC
-LIMIT 5 OFFSET 0; 
+LIMIT 5 OFFSET 0;   -- OFFSET : 몇 번째부터 추출할지 
 
 
 
@@ -326,4 +326,4 @@ LIMIT 5 OFFSET 0;
 SELECT *
 FROM edu09db.emp
 ORDER BY sal DESC
-LIMIT 3 OFFSET 3; 
+LIMIT 3 OFFSET 3;  -- 4번째부터 3개를 꺼내시오. 라는 뜻 edu09db
